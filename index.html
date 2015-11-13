@@ -1,23 +1,38 @@
 ---
-layout: default
+layout: blank
+title: ...delirium Mk. III
 ---
 
-<div class="home">
+<head>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <style>
+    @keyframes pulse {
+      0% {
+        text-shadow: 1px 4px 6px rgba(196, 165, 165, 0.8);
+      }
+      
+      60% {
+        text-shadow: 0 0 0 transparent;
+      }
+      
+      65% {
+        text-shadow: 2px 8px 14px rgba(196, 165, 165, 0.8);
+      }      
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      color: #fcfcfc;
+      background-color: rgb(89, 14, 95);
+    }
+    h1 {
+      font-size: 9vw;
+      animation: pulse 1s infinite;
+    }
+  </style>
+</head>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<body>
+  <h1>[insert blog here]</h1>
+</body>
