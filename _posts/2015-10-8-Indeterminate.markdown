@@ -2,6 +2,7 @@
 layout: post
 title: Indeterminate
 excerpt: In which I discuss why exiting the formal ministry was one of the best decisions I've made.
+tags: [Christianity, insecurity, ministry]
 ---
 
 When I left the formal ministry just under a year ago, it was with an incredible sense of relief. Incredible not just because of its magnitude, but because of the hurricane of angst and doubt that led up to my decision.

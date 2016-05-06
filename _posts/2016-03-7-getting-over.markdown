@@ -2,6 +2,7 @@
 layout: post
 title: Getting Over "Getting Over"
 excerpt: In which I explore how insecurity is a lot like being a lower-card pro wrestler.
+tags: [insecurity, wrestling]
 ---
  
 The name of the game in professional wrestling is "getting over" with the crowd. Up until that point, you do whatever it takes to get them to love you (if you're a good guy) or hate you (if you're a heel).

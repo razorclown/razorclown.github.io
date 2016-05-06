@@ -2,6 +2,7 @@
 layout: post
 title: Too Close to Hate
 excerpt: In which I discuss how someone can believe in grace while giving himself none.
+tags: [Christianity, insecurity]
 ---
 
 I had been a Christian for years, but I hated myself. That shouldn't be possible, but I did. I was preaching grace, but showing myself none. It struck me one night as I sat in my apartment. *I really do hate myself*, I thought. I realized how wrong that was, and that it needed to change.

@@ -2,6 +2,7 @@
 layout: post
 title: Kingdom Dance
 excerpt: In which I wonder why a certain part of an animated princess movie makes me cry every time.
+tags: [entertainment]
 ---
 
 Whenever I watch the Kingdom Dance scene from *Tangled*, I find myself near tears.

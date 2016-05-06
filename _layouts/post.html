@@ -12,4 +12,7 @@ layout: default
     {{ content }}
   </div>
 
+  <footer>
+    <p class="post-tags">Tags: {% for tag in page.tags %}<a class="post-tag" href="/tag/{{tag}}/">{{tag}}</a>{% unless page.tags.length == 0 %}{% unless forloop.last == true %}, {% endunless %}{% endunless %}{% endfor %}</p>
+  </footer>
 </article>

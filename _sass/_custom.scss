@@ -1,7 +1,31 @@
-article + article {
-  margin-top: $spacing-unit;
-}
-
 .callout {
   font-size: 1.25em;
+}
+
+.post-tags {
+  font-size: 1em * 14 / 16;
+  font-family: monospace;
+}
+
+//.post-tag:not(:last-child):after {
+//  content: ",";
+//}
+
+.post-summary {
+  & + .post-summary {
+    margin-top: $spacing-unit;
+    
+    &:before {
+      content: "";
+      display: block;
+      width: 50%;
+      margin-left: 15%;
+      padding-top: $spacing-unit - 1px;
+      border-top: 1px solid #ececec;
+    }
+  }
+  
+  .post-tags {
+    font-size: 1em * 13 / 16;
+  }
 }

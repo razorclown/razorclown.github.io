@@ -2,6 +2,7 @@
 layout: post
 title: Blue Pants vs. Brock Lesnar
 excerpt: "In which I pontificate on the most serious subject there is: professional wrestling storylines."
+tags: [entertainment, wrestling]
 ---
 
 I think it says something that a female wrestler named Blue Pants got a bigger pop than the guy who won this year's Royal Rumble and headlined Wrestlemania. But what does it say? That wrestling fans are fickle hipsters? Or that whoever's booking NXT could teach whoever's booking the main roster how to do their job? Or that wrestling is more voodoo than science? I really don't know. All I know is, I was seriously on board with NXT Takeover Brooklyn, but I was scratching my head at much of Summerslam.
