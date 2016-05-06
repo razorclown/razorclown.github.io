@@ -45,7 +45,6 @@ Temporary Items
 # Jekyll
 # =========================
 
-_site
 _drafts
 .sass-cache
 .jekyll-metadata
