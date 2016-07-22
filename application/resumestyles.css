@@ -63,6 +63,7 @@ p {
 .software {
   display: flex;
   flex-wrap: wrap;
+  max-width: 47em;
 }
 
 .software h3 {
