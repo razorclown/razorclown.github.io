@@ -480,3 +480,15 @@ pre {
 
 .post-content li + li {
   margin-top: 7.5px; }
+
+/* Glyph, by Harry Roberts */
+hr {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  width: 75%; }
