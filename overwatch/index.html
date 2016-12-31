@@ -17,6 +17,14 @@
         box-sizing: inherit;
       }
       
+      a {
+        color: white;
+      }
+      
+      a:visited {
+        color: #dfdfdf;
+      }
+      
       html {
         font-size: 18px;
       }
@@ -100,12 +108,30 @@
         margin-right: 0;
       }
       
+      [id="resources"] ul {
+        padding-left: 0;
+        column-width: 10.75em;
+        list-style: none;
+      }
+      
+      [id="resources"] li {
+        position: relative;
+        margin-left: 1.25em;
+      }
+      
+      [id="resources"] li:before {
+        content: "• ";
+        position: absolute;
+        left: -.75em;
+      }
+      
       footer {
         max-width: 44em;
       }
       
       footer,
-      footer a{
+      footer a,
+      footer a:visited{
         color: #333;
       }
       
@@ -130,7 +156,7 @@
     <p>The heroes of Overwatch are comparable to the street-level heroes of Marvel, such as Daredevil or Spider-Man. Each of them is engaging enough to star in their own monthly series, but none of them is powerful enough to hold off an army on their own.</p>
   </article>
 </section>
-<section>
+<section id="characters">
   <h2>The Recruits</h2>
 <!--
   <article class="char">
@@ -212,6 +238,54 @@
       <p>When Overwatch burst back onto the international scene, she ramped up production on her prototype: a modular suit of armor made entirely from scrap which she could summon from great distances.</p>
     </section>
   </article>
+</section>
+<section id="resources">
+  <h2>Setting Resources</h2>
+  <section>
+    <h3>Videos</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=FqnKB22pOC0&t=3s">Cinematic Trailer</a></li>
+      <li><a href="https://www.youtube.com/watch?v=Og5-Pm4HNlI">Infiltration</a></li>
+      <li><a href="https://www.youtube.com/watch?v=to8yh83jlXg">The Last Bastion</a></li>
+      <li><a href="https://www.youtube.com/watch?v=cPRRupAM4DI">Hero</a></li>
+      <li><a href="https://www.youtube.com/watch?v=oJ09xdxzIJQ">Dragons</a></li>
+      <li><a href="https://www.youtube.com/watch?v=U130wnpi-C0">Alive</a></li>
+      <li><a href="https://www.youtube.com/watch?v=sB5zlHMsM7k">Recall</a></li>
+      <li><a href="https://www.youtube.com/watch?v=pwFu8kEsUW4">Are You With Us?</a></li>
+      <li><a href="https://www.youtube.com/watch?v=vHHjdKMH7_w">Origin Story: Sombra</a></li>
+      <li><a href="https://www.youtube.com/watch?v=yzFWIw7wV8Q">Origin Story: Ana</a></li>
+      <li><a href="https://www.youtube.com/watch?v=byhvUmpAA9c&t=2s">Origin Story: Soldier: 76</a></li>
+      <li><a href="https://www.youtube.com/watch?v=l5kTATxt7bE">A Moment in Crime Special Report: The Junkers</a></li>
+    </ul>
+  </section>
+  <section>
+    <h3>Comics</h3>
+    <ul>
+      <li><a href="http://comic.playoverwatch.com/en-us/tracer-reflections">Reflections</a></li>
+      <li><a href="http://comic.playoverwatch.com/en-us/junkrat-junkenstein">Junkenstein</a></li>
+      <li><a href="http://comic.playoverwatch.com/en-us/ana-old-soldiers">Old Soldiers</a></li>
+      <li><a href="http://comic.playoverwatch.com/en-us/legacy">Legacy</a></li>
+      <li><a href="http://comic.playoverwatch.com/en-us/torbjorn-destroyer">Destroyer</a></li>
+      <li><a href="http://comic.playoverwatch.com/en-us/pharah-mission-statement">Mission Statement</a></li>
+      <li><a href="http://comic.playoverwatch.com/en-us/symmetra-a-better-world">A Better World</a></li>
+      <li><a href="http://comic.playoverwatch.com/en-us/junkrat-roadhog-going-legit">Going Legit</a></li>
+      <li><a href="http://comic.playoverwatch.com/en-us/reinhardt-dragon-slayer">Dragon Slayer</a></li>
+      <li><a href="http://comic.playoverwatch.com/en-us/mccree-train-hopper">Train Hopper</a></li>
+    </ul>
+  </section>
+  <section>
+    <h3>Articles</h3>
+    <ul>
+      <li><a href="https://playoverwatch.com/en-us/blog/20356130">LumériCo CEO Steps Down</a></li>
+      <li><a href="https://playoverwatch.com/en-us/blog/20353652">LumériCo Revelations: CEO Guillermo Portero Under Fire</a></li>
+      <li><a href="https://playoverwatch.com/en-us/blog/20130523">Overwatch is Back: Uncertainty and Hope After UN Confirms Vigilante Activity</a></li>
+      <li><a href="https://playoverwatch.com/en-us/blog/20119620">LumériCo Vision for Mexico Unveiled, but Threats to Safety and Security Remain</a></li>
+      <li><a href="https://playoverwatch.com/en-us/blog/19942649">小美的冒险日记 (Mei's Adventures)</a></li>
+      <li><a href="https://playoverwatch.com/en-us/blog/19828053">Lúcio Brings Music to Life with Synaesthesia World Tour</a></li>
+      <li><a href="https://playoverwatch.com/en-us/blog/19809396">Fading Glory: On the Trail of Jack Morrison</a></li>
+      <li><a href="https://playoverwatch.com/en-us/blog/19809235">Experimental Weapon Stolen from Watchpoint: Grand Mesa</a></li>
+    </ul>
+  </section>
 </section>
     </main>
     
