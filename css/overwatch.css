@@ -1,0 +1,142 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+a {
+  color: white; }
+
+a:visited {
+  color: #dfdfdf; }
+
+html {
+  font-size: 18px; }
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(to bottom, #8c9cc0, #eccdd3 17em, #f0edf2 44em);
+  background-color: #141516;
+  color: white;
+  line-height: 1.2;
+  margin: .5rem;
+  padding: 0; }
+
+main {
+  display: block; }
+
+* + * {
+  margin-top: 1.2rem;
+  margin-bottom: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: sans-serif;
+  font-stretch: condensed;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 1.2rem 0;
+  line-height: 1; }
+
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4 {
+  font-stretch: normal;
+  font-family: "Teko", sans-serif; }
+
+h1 {
+  font-size: 5em; }
+
+h2 {
+  font-size: 2.25em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.5em; }
+
+header {
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
+
+header,
+section,
+article {
+  padding: 1rem; }
+
+section {
+  max-width: 44em;
+  background-color: rgba(19, 42, 77, 0.6); }
+
+article {
+  background-color: rgba(19, 42, 77, 0.2); }
+
+@media (min-width: 48em) {
+  header,
+  main,
+  footer {
+    margin-left: 4em; } }
+.char-desc {
+  background-color: rgba(19, 42, 77, 0.2); }
+
+@media (max-width: 32em) {
+  .char-desc {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -1rem; } }
+.char blockquote {
+  color: #00c3ff;
+  font-family: sans-serif;
+  font-stretch: condensed;
+  font-style: italic;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  margin-left: 0;
+  margin-right: 0; }
+
+.wf-active .char blockquote {
+  font-stretch: normal;
+  font-family: "Teko", sans-serif; }
+
+[id="resources"] ul {
+  padding-left: 0;
+  column-width: 10.75em;
+  list-style: none; }
+
+[id="resources"] li {
+  position: relative;
+  margin-left: 1.25em; }
+
+[id="resources"] li:before {
+  content: "• ";
+  position: absolute;
+  left: -.75em; }
+
+footer {
+  max-width: 44em; }
+
+footer,
+footer a,
+footer a:visited {
+  color: #333; }
+
+@media (min-width: 36em) {
+  .rowmaker {
+    display: flex; }
+
+  .rowmaker > * {
+    flex: 1 1 0px;
+    margin-top: 0; }
+
+  .rowmaker > *:not(:first-child) {
+    margin-left: .5rem; }
+
+  .rowmaker > *:not(:last-child) {
+    margin-right: .5rem; } }
