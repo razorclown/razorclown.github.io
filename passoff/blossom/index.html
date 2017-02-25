@@ -46,7 +46,7 @@
       max-width: 42em;
     }
     
-    section::before {
+    section[data-author]::before {
       content: attr(data-author);
       display: inline-block;
       transform: rotate(-60deg) translateX(-100%);
@@ -98,6 +98,30 @@
       margin: 0;
       margin-top: 1em;
     }
+    
+    button {
+      all: initial;
+      display: inline-block;
+      font-family: inherit;
+      padding: .5em;
+      margin-top: 1em;
+      color: white;
+      background-color: black;
+      border-radius: 3px;
+      box-shadow: 0 2px 4px rgba(0,0,0,.4);
+      transition: box-shadow .2s linear;
+    }
+    
+    button:hover {
+      box-shadow: none;
+    }
+    
+    button:active {
+      box-shadow: 0 2px 4px rgba(255,255,255,.5) inset;
+      transition: none;
+    }
+    
+    
   </style>
 </head>
 
@@ -115,33 +139,33 @@
   }
 </style>
 
-<section id="intro" data-author="Editor">
+<section id="intro">
   <p><em>Note: This story was originally written in reverse chronological order.</em></p>
 </section>
 
 <div id="flipper">
 
-  <section>
+  <section data-author="zippy">
     <p>January 15, 2214
       <br> 23:04 GMT</p>
 
     <p>The starship Blossom, in transit between Persephone Colony and Haphaestus Colony, collides with an unidentified object and explodes. All hands reported lost. Cause of explosion under investigation.</p>
   </section>
 
-  <section>
+  <section data-author="oster">
     <p>January 13, 2214
       <br> 6:00 GMT</p>
 
     <p>The Blossom leaves space dock 12 hours behind schedule, after experiencing hyper drive malfunctions. The malfunctions are addressed, but the Poseidon Group loses 60,000 dactares when it’s forced to ship medical supplies destined for Milica V via another courier.</p>
   </section>
 
-  <section>
+  <section data-author="duckmu">
     <p>January 12, 2214
       <br> 18:00 GMT</p>
     <p>Launch of the starship Blossom is canceled due to “hyper drive malfunctions” after first officer Tak Twisp discovers an implosive device attached to the hyper drive, set to explode once the ship enters hyper space. Security personnel begins an investigation.</p>
   </section>
 
-  <section>
+  <section data-author="zippy">
     <p>January 12, 2214
       <br> 16:56 GMT</p>
 
@@ -168,7 +192,7 @@
     <p>[End of transmission.]</p>
   </section>
   
-  <section>
+  <section data-author="oster">
   <p>[Recorded comm conversation between Tak Twisp, aboard the Blossom, and unknown individual, location unknown.]</p>
 
   <p>Unknown: -don’t give me that shit, Twisp.</p>
@@ -198,7 +222,7 @@
   <p>Twisp: No, I’ll handle it.</p>
   </section>
   
-  <section>
+  <section data-author="zippy">
   <p>January 12, 2214<br>
     01:50 GMT</p>
 
@@ -207,7 +231,7 @@
   <p>A copy of the message and its attachment is sent via blind cc to a Visseran ship in orbit around Hera, which immediately drops into hyperspace.</p>
   </section>
   
-  <section>
+  <section data-author="oster">
 
   <p>January 10, 2214<br>
     07:38 GMT</p>
@@ -217,7 +241,7 @@
   <p>The Poseidon Group announced today that the Factory Satellite in orbit around Hephaestus suffered a catastrophic loss of all hands during the arrival of badly needed components for relief kits being shipped to victims of The Ares Consortium’s fierce war with The Locusts in the Region of Warped Space known as the Chaos Marches. The Poseidon Group has implicated the terror organization known as REMUS in such a “dispicable, heartless, and cruel act of malice”.</p>
   </section>
   
-  <section>
+  <section data-author="duckmu">
 
   <p>January 6, 2214<br>
     12:00<br>
@@ -238,7 +262,7 @@
   <p>The smile on the captain’s lips sent a shiver down the first officer’s spine. Neil knew something the rest of them didn’t.</p>
   </section>
   
-  <section>
+  <section data-author="oster">
 
   <p>January 6, 2214<br>
     1158 GMT</p>
@@ -270,7 +294,7 @@
   <p>[Captain Neil Dresden] Excellent, open a channel.</p>
   </section>
   
-  <section>
+  <section data-author="zippy">
 
   <p>January 6, 2214 06:12 GMT</p>
 
@@ -287,7 +311,7 @@
   <p>And you know what? I’m gonna tape it when I twist that bastard Dresden’s head off his shoulders.</p>
   </section>
   
-  <section>
+  <section data-author="oster">
 
   <p>January 4, 2214<br>14:37 GMT</p>
 
@@ -296,7 +320,7 @@
   <p>We arrived in system approximately twenty hours ago, and have been on station observing The Hades Cluster. Officially, we’re watching for any Locust Slipping through the rift on the darkside of Charon. Unofficially, we’re here to watch for those Reman bastards. Poseidon’s worried that the insurgents might’ve caught wind of our true motives. But as long as we put on a good show with the Forellians, we’ve got nothing to be worried about. The crew is nervous, but they’ll do their duty. I wish such green recruits hadn’t been requisitioned from Olympus for the task, but the ambush we survived at Crete has proven their mettle. I just wish we hadn’t lost the Athena and her sensor suite.</p>
   </section>
   
-  <section>
+  <section data-author="zippy">
 
   <p>January 2, 2214<br>22:35 GMT</p>
 
@@ -330,7 +354,7 @@
     
   </section>
   
-  <section>
+  <section data-author="oster">
 
   <p>December 25th, 2213<br>6:06 GMT</p>
 
@@ -389,7 +413,7 @@
   <p>[log ends, rest of conversation corrupted data]</p>
   </section>
   
-  <section>
+  <section data-author="zippy">
 
   <p>December 25, 2213<br>01:05 GMT</p>
 
@@ -440,7 +464,7 @@
   <p>2: Did I mention? She recommended Twisp. And I think she found us the right man.</p>
   </section>
   
-  <section>
+  <section data-author="oster">
 
   <p>December 19, 2213<br>08:21 GMT</p>
 
@@ -469,7 +493,7 @@
   <p>Mancha: Sir, you also have orders to report to the Blossom in one week’s time, for assignment under Neil Dresden.</p>
   </section>
   
-  <section>
+  <section data-author="zippy">
 
   <p>December 17, 2213<br>22:58 GMT</p>
 
@@ -516,7 +540,7 @@
   <p>Ithaca: Well done, Meyers. You’ve saved us all.</p>
   </section>
   
-  <section>
+  <section data-author="oster">
 
   <p>December 17, 2213<br>22:56 GMT</p>
 
@@ -553,7 +577,7 @@
   <p>-Twisp exits-</p>
   </section>
   
-  <section>
+  <section data-author="zippy">
 
   <p>December 12, 2213<br>08:41 GMT</p>
 

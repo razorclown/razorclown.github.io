@@ -46,7 +46,7 @@
       max-width: 42em;
     }
     
-    section::before {
+    section[data-author]::before {
       content: attr(data-author);
       display: inline-block;
       transform: rotate(-60deg) translateX(-100%);
@@ -98,6 +98,30 @@
       margin: 0;
       margin-top: 1em;
     }
+    
+    button {
+      all: initial;
+      display: inline-block;
+      font-family: inherit;
+      padding: .5em;
+      margin-top: 1em;
+      color: white;
+      background-color: black;
+      border-radius: 3px;
+      box-shadow: 0 2px 4px rgba(0,0,0,.4);
+      transition: box-shadow .2s linear;
+    }
+    
+    button:hover {
+      box-shadow: none;
+    }
+    
+    button:active {
+      box-shadow: 0 2px 4px rgba(255,255,255,.5) inset;
+      transition: none;
+    }
+    
+    
   </style>
 </head>
 
