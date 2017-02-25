@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>The Blossom</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
+    
+    html {
+      font-size: 18px;
+    }
+    
+    @media (max-width: 36em) {
+      html {
+        font-size: 16px;
+      }
+    }
+    
+    body {
+      background-color: black;
+      font-family: sans-serif;
+    }
+    
+    header {
+      margin-left: 4em;
+      color: white;
+    }
+    
+    section {
+      background-color: white;
+      position: relative;
+      margin-left: 4em;
+      padding: 1px 1em;
+      max-width: 42em;
+    }
+    
+    section::before {
+      content: attr(data-author);
+      display: inline-block;
+      transform: rotate(-60deg) translateX(-100%);
+      transform-origin: top left;
+      position: absolute;
+      left: -1.875em;
+      z-index: 200;
+      padding: .5em;
+      background-color: white;
+    }
+    
+    section[data-author="zippy"]::before {
+      content: "Zippy";
+    }
+    
+    section[data-author="duckmu"]::before {
+      content: "Duckmu";
+    }
+    
+    section[data-author="dmoney"]::before {
+      content: "D$";
+    }
+    
+    section[data-author="oster"]::before {
+      content: "Menace";
+    }
+    
+    section[data-author="crwuidth"]::before {
+      content: "Crwuidth";
+    }
+    
+    section[data-author="laggy"]::before {
+      content: "Lagartixa";
+    }
+    
+    section[data-author="zero"]::before {
+      content: "23r0";
+    }
+    
+    section:last-of-type {
+      padding-bottom: 1em;
+    }
+    
+    section footer {
+      font-size: .75em;
+    }
+    
+    p {
+      margin: 0;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h1>The Blossom</h1>
+      <p>A pass-off story, written April 4–17, 2008 on the Knoll Forum.</p>
+    </header>
+
+  <style>
+  .flipped {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+</style>
+
+<section id="intro" data-author="Editor">
+  <p><em>Note: This story was originally written in reverse chronological order.</em></p>
+</section>
+
+<div id="flipper">
+
+  <section>
+    <p>January 15, 2214
+      <br> 23:04 GMT</p>
+
+    <p>The starship Blossom, in transit between Persephone Colony and Haphaestus Colony, collides with an unidentified object and explodes. All hands reported lost. Cause of explosion under investigation.</p>
+  </section>
+
+  <section>
+    <p>January 13, 2214
+      <br> 6:00 GMT</p>
+
+    <p>The Blossom leaves space dock 12 hours behind schedule, after experiencing hyper drive malfunctions. The malfunctions are addressed, but the Poseidon Group loses 60,000 dactares when it’s forced to ship medical supplies destined for Milica V via another courier.</p>
+  </section>
+
+  <section>
+    <p>January 12, 2214
+      <br> 18:00 GMT</p>
+    <p>Launch of the starship Blossom is canceled due to “hyper drive malfunctions” after first officer Tak Twisp discovers an implosive device attached to the hyper drive, set to explode once the ship enters hyper space. Security personnel begins an investigation.</p>
+  </section>
+
+  <section>
+    <p>January 12, 2214
+      <br> 16:56 GMT</p>
+
+    <p>[Recorded comm conversation between Tak Twisp, aboard the Blossom, and unknown individual, location unknown.]</p>
+
+    <p>Twisp: It’s in place. Inspection’s in an hour. This ship isn’t leaving port.</p>
+
+    <p>Unknown: You’re sure? You’re absolutely sure?</p>
+
+    <p>Twisp: It’s interstellar law, ma’am. If a device like that is found on a ship, everything stops, and the feds take over. We’re stuck. Absolutely certain.</p>
+
+    <p>Unknown: [pause] This is Poseidon, Tak. If they covered up the factory explosion on Hephaestus, they can bury this. Don’t-</p>
+
+    <p>Twisp: Ma’am, don’t worry. It’s well in hand. There are feds on the premesis. There are probably reporters here, too. This isn’t getting swept under the rug like Hephaestus.</p>
+
+    <p>Unknown: Do you know what they said, Tak? “Minor difficulties.” I lost-</p>
+
+    <p>Twisp: I know. Don’t worry. This is the end. The feds will examine the ship, and they’ll find everything. It’s almost over.</p>
+
+    <p>Unknown: [pause] Contact me if there are any complications.</p>
+
+    <p>Twisp: There won’t be.</p>
+
+    <p>[End of transmission.]</p>
+  </section>
+  
+  <section>
+  <p>[Recorded comm conversation between Tak Twisp, aboard the Blossom, and unknown individual, location unknown.]</p>
+
+  <p>Unknown: -don’t give me that shit, Twisp.</p>
+
+  <p>Twisp: I’m not trying to be difficult, Ma’am, but I think that’s overstepping our auth-</p>
+
+  <p>Unknown: The Hephaestus Factory Satellite exploded, Twisp.</p>
+
+  <p>Twisp: (silence)</p>
+
+  <p>Twisp: What?</p>
+
+  <p>Unknown: I said the factory exploded, Twisp. Explosive decompression, due to a faulty D-12 interlock in the docking ring. The shipment of Corsemite detonated as soon as the compartment cycled.</p>
+
+  <p>Twisp: Yo-you’re lying. Poseidon isn’t processing Corsemite on Hephaestus. They-</p>
+
+  <p>Unknown: You better believe they are, Twisp. Poseidon’s backing the Forellian’s and their Campaign on the Chaos Marches.</p>
+
+  <p>Twisp: But Corsemite’s only used for antimatter gravity warheads…</p>
+
+  <p>Unknown: It’s not like the Forellians are interested in living worlds, Twisp. They don’t call them Locust for nothing.</p>
+
+  <p>Twisp: (silence)</p>
+
+  <p>Unknown: Twisp, if you don’t think you can do this, we’ll pull you out, I can have another agent on site in 6 hours.</p>
+
+  <p>Twisp: No, I’ll handle it.</p>
+  </section>
+  
+  <section>
+  <p>January 12, 2214<br>
+    01:50 GMT</p>
+
+  <p>A large quantity of crates marked as medical supplies arrive at Persephone and are promptly loaded onto the Blossom. A confirmation message is sent to Poseidon headquarters, with one addendum: a manifest from a mining operation on Herakles - known for its Corsemite deposits - listing several cubic tons of “miscellaneous equipment.”</p>
+
+  <p>A copy of the message and its attachment is sent via blind cc to a Visseran ship in orbit around Hera, which immediately drops into hyperspace.</p>
+  </section>
+  
+  <section>
+
+  <p>January 10, 2214<br>
+    07:38 GMT</p>
+
+  <p>(From PNN, The Pandora News Network, Sector Feed)</p>
+
+  <p>The Poseidon Group announced today that the Factory Satellite in orbit around Hephaestus suffered a catastrophic loss of all hands during the arrival of badly needed components for relief kits being shipped to victims of The Ares Consortium’s fierce war with The Locusts in the Region of Warped Space known as the Chaos Marches. The Poseidon Group has implicated the terror organization known as REMUS in such a “dispicable, heartless, and cruel act of malice”.</p>
+  </section>
+  
+  <section>
+
+  <p>January 6, 2214<br>
+    12:00<br>
+    The Factory Satellite in orbit around Hephaestus</p>
+
+  <p>[Captain Neil Dresden] “This is the starship Blossom, requesting permission to dock.”</p>
+
+  <p>[First Officer Tak Twisp] “Captain, I don’t think we want to dock here. There have been reports of certain unauthorized experiments conducted on this satellite. I don’t think it’s even a factory.</p>
+
+  <p>[Captain Neil Dresden] “None sense first officer, those rumors are just the warped dreams of some teenager obsessed with sci-fi fan fics…</p>
+
+  <p>As the Blossom pulls into the factory, they pick up a distress call from a nearby ship:</p>
+
+  <p>[Unknown Individual]”May da…ay-day… the starship Blossom!…an unauthorized…Corsemite…actory exploded…hyper drive unst…temporal anomaly…[static]”</p>
+
+  <p>[Captain Neil Dresden] Cancel that docking request. We’re leaving…Get us to Persephone Colony.</p>
+
+  <p>The smile on the captain’s lips sent a shiver down the first officer’s spine. Neil knew something the rest of them didn’t.</p>
+  </section>
+  
+  <section>
+
+  <p>January 6, 2214<br>
+    1158 GMT</p>
+
+  <p>-En Route to Hephaestus-</p>
+
+  <p>[Captain Neil Dresden] Helm, what’s our ETA?</p>
+
+  <p>[Helmsman] We’ll be dropping out of warp in ninety seconds, sir.</p>
+
+  <p>[Captain Neil Dresden] Very good.</p>
+
+  <p>[First Officer Tak Twisp] Sir? If you have a moment?</p>
+
+  <p>[Captain Neil Dresden] Go ahead, Twisp.</p>
+
+  <p>[First Officer Tak Twisp] Don’t you think it’s odd we were pulled from our assignment at Sparta for a simple relief supply shipment? I mean, the Merovingian was far closer then we were…</p>
+
+  <p>[Captain Neil Dresden] Nonsense, Twisp. The Merovingian’s observing the Hades Cluster. Poseidon needs to make sure The Locust don’t come through that damned spacial rift on the dark side of Charon.</p>
+
+  <p>[First Officer Tak Twisp] Yessir, but-</p>
+
+  <p>[Captain Neil Dresden] But nothing, Twisp. The Poseidon Group’s first priority is providing Medical Relief to the civilians trapped in the Chaos Marches. The Ares Corp might be too busy pretending to be the God of War to care about the people, but Poseidon won’t abandon them.</p>
+
+  <p>[First Officer Tak Twisp] But don’t you think that -</p>
+
+  <p>[Helm] We’re coming out of warp, Captain.</p>
+
+  <p>[Captain Neil Dresden] Excellent, open a channel.</p>
+  </section>
+  
+  <section>
+
+  <p>January 6, 2214 06:12 GMT</p>
+
+  <p>[personal log of Esperanza Verdun, Captain of the ACS Harpy]</p>
+
+  <p>Apparently we found the right hiding place. The moon dust must be thick enough to mask us after all. Good thing. Wouldn’t have wanted to miss this. We’ve been able to pick up their comms and get ours to and from as well. Just about perfect.</p>
+
+  <p>My man aboard the Blossom tells me they left five minutes ago for Hephaestus. And my… man on Hephaestus tells me they’re expecting more materials today. Unbelievable. Dresden’s lost his mind if he thinks no one’s going to notice. But then again, this is Poseidon we’re talking about.</p>
+
+  <p>[sigh] The Merovingian’s been here for three days, and it hasn’t moved. Sensors have been going nonstop, but they’re just floating there. They’re supposed to be watching Hades to make sure the Locust don’t rush the rift and make it through. They’re supposed to be watching for us.</p>
+
+  <p>In three days, fifty Locust ships have made it through. Fifty. We don’t have sensor logs. Can’t give away our position. But we have it all on camera.</p>
+
+  <p>And you know what? I’m gonna tape it when I twist that bastard Dresden’s head off his shoulders.</p>
+  </section>
+  
+  <section>
+
+  <p>January 4, 2214<br>14:37 GMT</p>
+
+  <p>[personal log of Markus Octavius Leonidus, Captain of the PGS Merovingian]</p>
+
+  <p>We arrived in system approximately twenty hours ago, and have been on station observing The Hades Cluster. Officially, we’re watching for any Locust Slipping through the rift on the darkside of Charon. Unofficially, we’re here to watch for those Reman bastards. Poseidon’s worried that the insurgents might’ve caught wind of our true motives. But as long as we put on a good show with the Forellians, we’ve got nothing to be worried about. The crew is nervous, but they’ll do their duty. I wish such green recruits hadn’t been requisitioned from Olympus for the task, but the ambush we survived at Crete has proven their mettle. I just wish we hadn’t lost the Athena and her sensor suite.</p>
+  </section>
+  
+  <section>
+
+  <p>January 2, 2214<br>22:35 GMT</p>
+
+  <p>[Excerpt from recorded conversation between Neil Dresden and Markus Leonidus, Hera Spaceport cantina.]</p>
+
+  <p>Leonidus: I didn’t mind losing the Corsemite, if it meant one less Reman bombmaker. Which it did. We didn’t lose anything we can’t replace.</p>
+
+  <p>Dresden: Huh. You’ve got some weird priorities, Mark. I don’t get why you hate the-</p>
+
+  <p>Leonidus: This is my homeworld. I was in Corinth on White Thursday.</p>
+
+  <p>Dresden: [pause] Oh. Always wondered why you always wanna meet in this pit.</p>
+
+  <p>Leonidus: That’s my reason.</p>
+
+  <p>Dresden: Hmm.</p>
+
+  <p>Leonidus: [pause] Do you ever have doubts, Neil?</p>
+
+  <p>Dresden: Hmm?</p>
+
+  <p>Leonidus: About your job.</p>
+
+  <p>Dresden: Doubts? No. The only things I believe in, Markus, are money and power. And my faith moves mountains. So no, I don’t have any doubts. You?</p>
+
+  <p>Twisp [via comm]: Captain, come in.</p>
+
+  <p>Dresden: Hold on, Tak. Excuse me, Mark. Duty calls.</p>
+
+  <p>Leonidus: Of course. Not to worry.</p>
+    
+  </section>
+  
+  <section>
+
+  <p>December 25th, 2213<br>6:06 GMT</p>
+
+  <p>[Retrieved from Xerxes, REMUS Encrypted Artificial Intelligence]</p>
+
+  <p>Twisp: Hello?</p>
+
+  <p>[unknown individual]: Hello, Tak.</p>
+
+  <p>Twisp: I-I was told to log into the public data stream, but then it all blacked out.</p>
+
+  <p>[U.I.]: I know.</p>
+
+  <p>Twisp: Wh-what’s all of this about? I got a package from Lily the day before she died…</p>
+
+  <p>[U.I.]: I know that too, son. My name is Prometheus.</p>
+
+  <p>Twisp: …PROMETHEUS?! THE Prometheus?</p>
+
+  <p>Prometheus: Yes, son. The Prometheus.</p>
+
+  <p>Twisp: Oh god, if Poseidon finds out I’m talking to a Reman terrorist…</p>
+
+  <p>Prometheus: Relax, son. You’re out of the loom of fate.</p>
+
+  <p>Twisp: What?</p>
+
+  <p>Prometheus: Nothing, it’s an expression you’ll pick up, soon enough.</p>
+
+  <p>Twisp: Okay, look, what’s this about? Lily wasn’t a bomb maker or a Reman sympathizer…</p>
+
+  <p>Prometheus: …</p>
+
+  <p>Twisp: …was she?</p>
+
+  <p>Prometheus: Son, there’s a great deal you’ve got to learn about the galaxy. You’ve been living in a cave, with only the shadows of the truth playing on the wall before you. But now I’m offering you a choice. A choice to bring a brighter, hotter light then you’ve ever known and shine it right on the people who’ve been forging your entire life with shadow puppets.</p>
+
+  <p>Twisp: Uh…</p>
+
+  <p>Prometheus: … I have to go. There’s a great deal of work to be done. Lily would be proud of you.</p>
+
+  <p>Twisp: Wait, you still haven’t told me how you know Lily.</p>
+
+  <p>Prometheus: She was one of us, son. And we were damn proud of her. Listen, I’m going to transfer you to your operator. She’ll be guiding you from here on out. Goodbye, Tak.</p>
+
+  <p>Twisp: Goodbye…</p>
+
+  <p>Unknown: Hello, Twisp. I hope you’re ready to beat the shit out of those lying Poseidon Sons of Bitches. We’ve got a lot to talk about. Lily spoke of highly of you.</p>
+
+  <p>Twisp: Wait, you knew Lily too?</p>
+
+  <p>Unknown: -silence-</p>
+
+  <p>Unknown: She was my girlfriend.</p>
+
+  <p>[log ends, rest of conversation corrupted data]</p>
+  </section>
+  
+  <section>
+
+  <p>December 25, 2213<br>01:05 GMT</p>
+
+  <p>[Retrieved from Xerxes, REMUS Encrypted Artificial Intelligence] [0001 Level REMUS Personnel Only]</p>
+
+  <p>1: So. Why the name Prometheus? I never thought to ask.</p>
+
+  <p>2: Am I not in chains? And do I not wish to aid humanity?</p>
+
+  <p>1: I suppose. You mentioned a candidate?</p>
+
+  <p>2: A strong possibility. He is the first officer of the starship Blossom-</p>
+
+  <p>1: Dresden’s ship? No. If Dresden picked him-</p>
+
+  <p>2: But Neil Dresden did not select him. He was appointed to his post by the Poseidon corportate office. His name is Tak Twisp, and if he complies, you will be his handler.</p>
+
+  <p>1: …you want me to handle a spy on the Blossom.</p>
+
+  <p>2: It not only benefits REMUS, but carries personal significance to you.</p>
+
+  <p>1: I noticed. Hmm. I can’t turn that one down, sir.</p>
+
+  <p>2: I will contact him shortly. When I do, I will have you on standby.</p>
+
+  <p>1: Yes, sir. [extended silence] Anything further, sir.</p>
+
+  <p>2: You may not think it possible, but I was momentarily distracted.</p>
+
+  <p>1: Well, I… didn’t know you could be. Do you… miss Lily?</p>
+
+  <p>2: You may not think it possible, but I do. Would you do a favor for me, Esperanza?</p>
+
+  <p>1: Yes, sir?</p>
+
+  <p>2: In an informal moment such as this, you may refer to me as Xerxes. I am loading the Prometheus personality matrix. It will allow me to better express myself.</p>
+
+  <p>1: …you just want me to listen.</p>
+
+  <p>2: Yes. I’d really appreciate it, Captain.</p>
+
+  <p>1: Um… of course, sir.</p>
+
+  <p>2: Thank you. It has been hard since… since Lily… God, I miss her. This might seem strange… but I thought of her as my girlfriend.</p>
+
+  <p>1: …not strange, sir.</p>
+
+  <p>2: Did I mention? She recommended Twisp. And I think she found us the right man.</p>
+  </section>
+  
+  <section>
+
+  <p>December 19, 2213<br>08:21 GMT</p>
+
+  <p>[internal feed, Poseidon Group Marine, Lieutenant Hector Mancha]</p>
+
+  <p>Mancha knocks on the door, and a disshelved man in his mid thirties opens it after a few moments. He is identified as Tak Twisp.</p>
+
+  <p>Mancha: Commander Twisp?</p>
+
+  <p>Twisp: -yawn- Yes?</p>
+
+  <p>Mancha: Orders from Poseidon, sir.</p>
+
+  <p>Twisp blinks, frowns.</p>
+
+  <p>Twisp: You woke me up for orders? There better be something else or you got a hell of assignment waking me up-</p>
+
+  <p>Mancha: I’m afraid there is, sir.</p>
+
+  <p>Mancha hands Twisp an enveloped with a print seal. Twisp takes the envelope in his hand, thumbs the seal. The envelope opens. Mancha snaps to attention.</p>
+
+  <p>Mancha: Lieutenant Commander Tak Twisp, on behalf of the Poseidon Group I offer you my sincere condolences in bearing the sad news that your sister - Engineer First Class Lily Twisp, has been killed on the Starship Rubicon under the command of Jethro Ithaca. Engineer Twisp was a valued member of the Poseidon Family, and she will be missed…</p>
+
+  <p>Twisp’s mouth hangs open as he unsheathes the report from the envelope.</p>
+
+  <p>Mancha: Sir, you also have orders to report to the Blossom in one week’s time, for assignment under Neil Dresden.</p>
+  </section>
+  
+  <section>
+
+  <p>December 17, 2213<br>22:58 GMT</p>
+
+  <p>[Deleted security log from the PGS Rubicon]</p>
+
+  <p>Engineer Twisp enters the engine bay in an envirohazard suit and examines the diagnostic panel. The engine bay has been flooded with verson gas. Twisp turns around abruptly at the sound of the airlock’s safety seal engaging.</p>
+
+  <p>Twisp: Wha-</p>
+
+  <p>Ithaca: (voice heard over engine room loudspeaker) Who’s your contact, Lily?</p>
+
+  <p>Twisp tenses visibly, then slackens a moment later. She turns toward the airlock and leans against the engine.</p>
+
+  <p>Twisp: What contact is that, Captain?</p>
+
+  <p>Ithaca: Last chance. Who’s your REMUS contact?</p>
+
+  <p>Twisp shrugs and crosses her ams. For a moment, she says nothing. She looks toward the floor.</p>
+
+  <p>Twisp: I’m sorry, sir.</p>
+
+  <p>Ithaca: Give me a name, Tw-</p>
+
+  <p>Twisp: I wasn’t talking to you, Jethro. [pause] Yeah. They found me.</p>
+
+  <p>Ithaca: (voice barely audible) Trace it. Now! Go!</p>
+
+  <p>Twisp: No. Don’t. Just… there’s nothing you can do. I’m sorry.</p>
+
+  <p>Automated Voice: Encrypted stream. Trace impossible.</p>
+
+  <p>Ithaca:[growls] Three seconds, and I’m releasing the plasma.</p>
+
+  <p>Twisp: Go to hell, Jethro. Just push the button.</p>
+
+  <p>Four seconds later, the engine executes a plasma vent. Engineer Twisp disappears in the flames.</p>
+
+  <p>Engineer Selica Meyers: Shouldn’t we have questioned her, sir?</p>
+
+  <p>Ithaca: There’s no reasoning with REMUS. Just be happy with your promotion, Engineer.</p>
+
+  <p>Meyers: Yes, sir. Thank you, sir. I’m just glad I could stop the plasma leak in time.</p>
+
+  <p>Ithaca: Well done, Meyers. You’ve saved us all.</p>
+  </section>
+  
+  <section>
+
+  <p>December 17, 2213<br>22:56 GMT</p>
+
+  <p>[Deleted security log from the PGS Rubicon]</p>
+
+  <p>Engineer Silica Meyers: Sir! The engineering compartment’s been flooded with Verson Gas!</p>
+
+  <p>Ithaca: What? How?!</p>
+
+  <p>-Twisp enters the bridge-</p>
+
+  <p>Twisp: What? What happened?</p>
+
+  <p>Ithaca: There’s a Verson leak in the Engineering bay. Thirteen people are already dead.</p>
+
+  <p>Twisp: By the Gods… Meyers, report!</p>
+
+  <p>Meyers: I don’t know, Ma’am. I checked the Verson seals myself. Nothing should’ve broken the storage encryption, short of Executive Overrides…</p>
+
+  <p>-Twisp turns, looking at Ithaca darkly. She keeps her eyes on Jethro, while speaking aloud to the room-</p>
+
+  <p>Twisp: Can you stop it, Meyers?</p>
+
+  <p>Meyers: …I-I can’t enable the safety overrides. There’s no access except in Engineering’s environment control panel.</p>
+
+  <p>-Ithaca straightens from where he’d been leaning over the rail with both hands, crosses his arms over his chest. He watches Twisp with his chin set-</p>
+
+  <p>Twisp: I’ll go.</p>
+
+  <p>Meyers: But Ma’am-</p>
+
+  <p>Twisp: But nothing. Someone has to take responsibility around here.</p>
+
+  <p>-Twisp exits-</p>
+  </section>
+  
+  <section>
+
+  <p>December 12, 2213<br>08:41 GMT</p>
+
+  <p>[Heavily encrypted communication, retrieved from Xerxes, REMUS AI]</p>
+
+  <p>Lily Twisp: I haven’t cracked his files yet, but I overheard him and Dresden talking. The Blossom is running corsemite.</p>
+
+  <p>Prometheus: All the while masquerading as a medical supply ship.</p>
+
+  <p>Esperanza Verdun: So, not only did Dresden get his own ship, he’s helping supply the Locust. Unbelievable.</p>
+
+  <p>Prometheus: Is it really so farfetched?</p>
+
+  <p>Twisp: That’s something else, sir. I also heard… they’re considering my brother for his first officer.</p>
+
+  <p>Prometheus: Are they.</p>
+
+  <p>Twisp: Yeah. They are.</p>
+
+  <p>Verdun: Well, if he’s got half the integrity you say, he won’t even work with Dresden.</p>
+
+  <p>Prometheus: Turning down such an assignment would be highly suspicious. Not a good move with Poseidon looming over you. Perhaps we could bring him in when he is brought aboard the Blossom. It would place him in an ideal position.</p>
+
+  <p>Verdun: In one sense.</p>
+
+  <p>Twisp: Yeah. Unless we have to…</p>
+
+  <p>Prometheus: Lily. Love.</p>
+
+  <p>[momentary silence]</p>
+
+  <p>Prometheus: I need to know you’ll be ready to do what you must to stop them.</p>
+
+  <p>Twisp: Of course. But I don’t have to like it.</p>
+
+  <p>Prometheus: Of course, love. Esperanza, I’m counting on you as a last resort. A last hope, if you will.</p>
+
+  <p>Verdun: I’ve got a favor to burn with some Visseran mercenaries. They’ll be my fallback plan. Otherwise, I’ll take care of the Blossom myself. [pause] I’m sorry, Lily.</p>
+
+  <p>Twisp: Don’t apologize, ma’am. I’m not worried about Tak. He’ll be okay.</p>
+</div>
+  
+  <script>
+    let flipButton = document.createElement('button'),
+        div = document.getElementById('flipper'),
+        intro = document.getElementById('intro'),
+        classes = div.classList;
+    
+    flipButton.innerHTML = 'Reverse Order';
+    
+    flipButton.addEventListener('click', function(e){
+      classes.toggle('flipped');
+    });
+    
+    intro.appendChild(flipButton);
+    
+  </script>
+  
+    
+  </article>
+</body>
+
+</html>
