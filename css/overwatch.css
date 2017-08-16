@@ -84,11 +84,13 @@ article {
   main,
   footer {
     margin-left: 4em; } }
-.char-desc {
+.char-desc,
+.char-qs {
   background-color: rgba(19, 42, 77, 0.2); }
 
 @media (max-width: 32em) {
-  .char-desc {
+  .char-desc,
+  .char-qs {
     margin-left: -1rem;
     margin-right: -1rem;
     margin-bottom: -1rem; } }
