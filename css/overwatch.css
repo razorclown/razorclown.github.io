@@ -14,6 +14,9 @@ a:visited {
 
 html {
   font-size: 18px; }
+  @media (max-width: 32em) {
+    html {
+      font-size: 16px; } }
 
 body {
   font-family: sans-serif;
