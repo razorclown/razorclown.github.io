@@ -43,11 +43,16 @@
         }
         
         .post {
-            display: grid;
-            grid-template-columns: 12em 1fr;
-            box-shadow: 0 3px 16px rgba(116, 17, 17, 0.4);
+            box-shadow: 0 3px 16px rgba(116, 17, 17, 0.7);
             background-color: black;
             border-radius: 1px;
+        }
+        
+        @media (min-width: 42em) {
+            .post {
+                display: grid;
+                grid-template-columns: 12em 1fr;
+            }
         }
         
         .post > * {
@@ -73,7 +78,7 @@
         
         .post > footer {
             grid-column: 2;
-            font-size: calc(1em * 17 / 18);
+            font-size: calc(1em * 16 / 18);
             font-style: italic;
         }
         
