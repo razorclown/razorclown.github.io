@@ -11,11 +11,25 @@
               font-family: "Merriweather Sans", sans-serif;
           }
           
-          body > header > p {
+          body > header {
+              position: relative;
+              padding-bottom: 20%;
+          }
+
+          svg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+          }
+
+          .papertitle {
               font-family: Merriweather, serif;
+              font-size: 8px;
               font-weight: 900;
-              font-size: 4em;
               letter-spacing: -.02em;
+              dominant-baseline: middle;
           }
           
           h1 {
@@ -42,7 +56,9 @@
   </head>
   <body>
       <header>
-          <p>Warren Courier-Herald</p>
+          <svg viewbox="0 0 100 20">
+              <text class="papertitle" x="50%" y="50%" text-anchor="middle">Warren Courier-Herald</text>
+          </svg>
       </header>
       <article>
           <header>
