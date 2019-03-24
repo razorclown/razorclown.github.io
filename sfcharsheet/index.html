@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700,300|Khand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700,300|Khand" rel="stylesheet"> 
         <style>
             * {
                 box-sizing: border-box;
             }
-
+            
             html {
                 background-color: #888;
                 padding: 0;
                 margin: 0;
             }
-
+            
             input {
                 width: 100%;
                 border: 0;
@@ -20,17 +20,17 @@
                 text-align: center;
                 font-size: 1em;
             }
-
+            
             table {
                 border-collapse: collapse;
             }
-
+            
             td {
                 border: 1pt solid #ddd;
                 padding: 0;
                 margin: 0;
             }
-
+            
             body {
                 background-color: white;
                 width: 8.5in;
@@ -41,7 +41,7 @@
                 line-height: 1.4;
                 margin: 0;
             }
-
+            
             h1,
             h2,
             h3,
@@ -52,20 +52,20 @@
                 font-family: 'Khand', sans-serif;
                 font-weight: normal;
             }
-
+            
             h1 {font-size: 24pt;}
             h2 {font-size: 18pt}
             h3 {font-size: 16pt}
             h4 {font-size: 15pt}
             h5 {font-size: 14pt}
-
+            
             body {
                 display: grid;
                 grid-template-columns: repeat(7, 1fr);
                 grid-template-rows: repeat(5, min-content);
                 grid-gap: .25in;
             }
-
+            
             p {
                 line-height: 1.2;
                 padding: 0;
@@ -73,37 +73,37 @@
                 break-inside: avoid;
                 margin-top: .5rem;
             }
-
+            
             * + article {
                 margin-top: 1rem;
             }
-
+            
             h1 {
                 margin: 0;
                 padding: 0;
                 line-height: 1;
                 margin-right: auto;
             }
-
+            
             label {
                 display: flex;
                 font-weight: bold;
             }
-
+            
             label input {
                 font-weight: normal;
                 max-width: 2em;
                 margin-left: auto;
             }
-
+            
             small {
                 font-size: 9pt;
                 font-weight: 300;
                 letter-spacing: .05em;
             }
-
+            
             body > header {grid-column: -1/1;}
-
+            
             .scores    {grid-column: span 2;
                         grid-row:    2;}
             .health    {grid-column: span 1;
@@ -118,89 +118,89 @@
             .weapons   {grid-column: span 3;}
             .abilities {grid-column: span 3;}
             .spells    {grid-column: span 3;}
-
+            
             th {
                 font-weight: normal;
             }
-
+            
             th[scope="row"] {
                 text-align: left;
                 font-weight: bold;
                 padding-right: .5em;
             }
-
+            
             th:first-child {
                 text-align: left;
             }
-
+            
             th:nth-child(2) {
                 font-weight: bold;
             }
-
+            
             td:first-of-type {
                 border-right: 2pt solid #ccc;
             }
-
+            
             body > header {
                 display: flex;
                 align-items: baseline;
             }
-
+            
             body > header p {
                 margin: 0;
                 margin-left: 1rem;
                 line-height: 1;
             }
-
+            
             .skills th:first-child {
                 width: 11em;
                 padding-left: calc(1in / 16);
             }
-
+            
             .clskill {
                 border-left: 1pt solid black;
                 padding-left: calc(1in / 16 - 1pt);
             }
-
+            
             .weapon {
                 display: grid;
                 grid-template-columns: repeat(6, auto);
             }
-
+            
             .weapon h3 {
                 font-size: 14pt;
                 grid-column: span 3;
             }
-
+            
             .weapon-special {
                 grid-column: -1/1;
             }
-
+            
             .weapon h3 {
                 font-size: 14pt;
                 grid-column: -1/1;
                 line-height: 1;
             }
-
+            
             .columns {
                 column-count: 2;
                 column-gap: .125in;
             }
-
+            
             .columns section {
                 break-inside: avoid;
             }
-
+            
             .columns h2,
             .spanner {
                 column-span: all;
                 margin-bottom: 1rem;
             }
-
+            
             .columns > p:nth-child(2) {
                 margin-top: 0;
             }
-
+            
         </style>
     </head>
     <body>
@@ -209,7 +209,7 @@
                 <p><strong>Alignment:</strong> Chaotic Neutral</p>
                 <p><strong>Deity:</strong> Nyarlathotep</p>
         </header>
-
+        
         <section class="scores">
             <h2>Ability Scores</h2>
             <table>
@@ -252,7 +252,7 @@
         </section>
         <section class="saving">
             <h2>Saving Throws</h2>
-
+            
             <table>
                 <tr>
                     <th>&nbsp;</th>
@@ -483,7 +483,7 @@
                 </tr>
             </table>
         </section>
-
+        
         <section class="armor">
             <h2>AC</h2>
             <table>
@@ -531,7 +531,7 @@
 <!--                <p class="weapon-ammo">Ammo </p>-->
                 <p class="weapon-special">Special: Analog, Operative </p>
             </article>
-
+            
             <article class="weapon">
                 <h3>Pulse Caster Pistol</h3>
                 <p class="weapon-level">Level 1</p>
@@ -583,7 +583,7 @@
             <p>Telepathy: 30&prime;</p>
             <p>Veiled Threat</p>
         </section>
-
+        
         <section class="spells columns">
             <h2>Spells</h2>
             <p class="spanner">DC: Spell Level + 14</p>
