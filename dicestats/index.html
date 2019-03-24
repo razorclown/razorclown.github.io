@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dice Stats</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+    <button id="addDie">Add die</button>
+    <section id="dice">
+      <template id="dieTemplate">
+        <p class="die">
+          <label>1d<input class="die-sides" type="number" value="20"></label> <label>+ <input class="die-modifier" type="number"></label>
+        </p>
+      </template>
+    </section>
+
+    <p class="target"><label>Target number: <input class="roll-target" type="number"></label></p>
+
+  <p><label><input type="radio" name="rollType" id="sumRoll">Total rolled</label>
+
+    <label><input type="radio" name="rollType" id="successRoll">Successes</label></p>
+
+
+    <button id="submitDice">Create Stats</button>
+
+  <article id="rollList">
+  </article>
+
+  <script>
+//    let diceForm = document.getElementById('setDice'),
+//        diceTable = document.getElementById('rolls'),
+//        die1 = document.getElementById('die1').value,
+//        mod1 = document.getElementById('plus1').value,
+//        die2 = document.getElementById('die2').value,
+//        mod2 = document.getElementById('plus2').value;
+//
+//    function makeCell(num) {
+//      let cell = document.createElement('td');
+//      cell.textContent = num;
+//      return cell;
+//    }
+//
+//    function makeHeader(num, rowOrColumn) {
+//      let cell = document.createElement('th');
+//      cell.textContent = num;
+//      cell.scope = rowOrColumn;
+//      return cell;
+//    }
+//
+//    diceForm.addEventListener('submit', (event) => {
+//      event.preventDefault;
+//
+//      let rowArray = [];
+//
+//      //make first row
+//      let row = document.createElement('tr');
+//
+//      for (let i = 1; i <= die1; i++) {
+//        let cell = makeHeader(i, 'column');
+//        row.appendChild(cell);
+//      }
+//
+//      diceTable.appendChild(row);
+//
+//    });
+
+    let dieTemplate = document.getElementById('dieTemplate'),
+        diceBag = document.getElementById('dice'),
+        addDieButton = document.getElementById('addDie'),
+        rollList = document.getElementById('rollList'),
+        submitButton = document.getElementById('submitDice');
+
+
+    diceBag.addEventListener('change', (event) => {
+      dieTemplate.content.querySelector('.die-sides').value = event.target.value;
+    });
+
+    function makeNewDie(){
+      let newDie = document.importNode(dieTemplate.content, true);
+      diceBag.appendChild(newDie);
+    }
+
+    makeNewDie();
+
+    addDieButton.addEventListener('click', makeNewDie);
+
+    function getRolls() {
+      let rolls = [];
+      let dice = document.querySelectorAll('.die');
+      let numDice = dice.length;
+      let dieIndex = 0;
+
+      function getRoll(die, roll) {
+        let currentSides = parseInt(die.querySelector('.die-sides').value);
+        let currentMod = parseInt(die.querySelector('.die-modifier').value);
+
+        if (isNaN(currentMod)) {
+          currentMod = 0;
+        }
+
+        for (let currentSide = 1; currentSide <= currentSides; currentSide++) {
+
+          let newRoll = roll.slice();
+          newRoll.push(currentSide + currentMod);
+
+
+          if (dice[dieIndex + 1]) {
+            dieIndex++;
+            getRoll(dice[dieIndex], newRoll);
+          }
+
+          if (newRoll.length === dice.length) {
+            rolls.push(newRoll);
+          }
+        }
+        dieIndex--;
+      }
+
+      getRoll(dice[0], []);
+
+      printRolls(rolls);
+    }
+
+    function printRolls(rolls) {
+      rollList.textContent = '';
+
+      rolls.forEach((roll) => {
+        let p = document.createElement('p');
+        p.textContent = roll + ' (' + sumRoll(roll) + ')';
+
+        if (sumRoll(roll) >= parseInt(document.querySelector('.roll-target').value)) {
+          p.setAttribute('style', 'color: limegreen;')
+        }
+
+        rollList.appendChild(p);
+      });
+    }
+
+    function sumRoll(roll) {
+      return roll.reduce(add, 0);
+    }
+
+    function add(x,y) {return x + y;}
+
+    submitButton.addEventListener('click', getRolls);
+
+  </script>
+</body>
+
+</html>

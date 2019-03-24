@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700,300|Khand" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            html {
+                background-color: #888;
+                padding: 0;
+                margin: 0;
+            }
+
+            input {
+                width: 100%;
+                border: 0;
+/*                background-color: rgb(240, 240, 240);*/
+                text-align: center;
+                font-size: 1em;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            td {
+                border: 1pt solid #ddd;
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                background-color: white;
+                width: 8.5in;
+                height: 11in;
+                padding: .5in;
+                font-size: 10pt;
+                font-family: 'Encode Sans Condensed', sans-serif;
+                line-height: 1.4;
+                margin: 0;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                margin: 0;
+                padding: 0;
+                font-family: 'Khand', sans-serif;
+                font-weight: normal;
+            }
+
+            h1 {font-size: 24pt;}
+            h2 {font-size: 18pt}
+            h3 {font-size: 16pt}
+            h4 {font-size: 15pt}
+            h5 {font-size: 14pt}
+
+            body {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(5, min-content);
+                grid-gap: .25in;
+            }
+
+            p {
+                line-height: 1.2;
+                padding: 0;
+                margin: 0;
+                break-inside: avoid;
+                margin-top: .5rem;
+            }
+
+            * + article {
+                margin-top: 1rem;
+            }
+
+            h1 {
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+                margin-right: auto;
+            }
+
+            label {
+                display: flex;
+                font-weight: bold;
+            }
+
+            label input {
+                font-weight: normal;
+                max-width: 2em;
+                margin-left: auto;
+            }
+
+            small {
+                font-size: 9pt;
+                font-weight: 300;
+                letter-spacing: .05em;
+            }
+
+            body > header {grid-column: -1/1;}
+
+            .scores    {grid-column: span 2;
+                        grid-row:    2;}
+            .health    {grid-column: span 1;
+                        grid-row:    2;}
+            .saving    {grid-column: span 2;
+                        grid-row:    2;}
+            .skills    {grid-column: span 3;
+                        grid-row:    span 2;}
+            .combat    {grid-column: span 3;}
+            .attack    {grid-column: span 2;}
+            .armor     {grid-column: span 3;}
+            .weapons   {grid-column: span 3;}
+            .abilities {grid-column: span 3;}
+            .spells    {grid-column: span 3;}
+
+            th {
+                font-weight: normal;
+            }
+
+            th[scope="row"] {
+                text-align: left;
+                font-weight: bold;
+                padding-right: .5em;
+            }
+
+            th:first-child {
+                text-align: left;
+            }
+
+            th:nth-child(2) {
+                font-weight: bold;
+            }
+
+            td:first-of-type {
+                border-right: 2pt solid #ccc;
+            }
+
+            body > header {
+                display: flex;
+                align-items: baseline;
+            }
+
+            body > header p {
+                margin: 0;
+                margin-left: 1rem;
+                line-height: 1;
+            }
+
+            .skills th:first-child {
+                width: 11em;
+                padding-left: calc(1in / 16);
+            }
+
+            .clskill {
+                border-left: 1pt solid black;
+                padding-left: calc(1in / 16 - 1pt);
+            }
+
+            .weapon {
+                display: grid;
+                grid-template-columns: repeat(6, auto);
+            }
+
+            .weapon h3 {
+                font-size: 14pt;
+                grid-column: span 3;
+            }
+
+            .weapon-special {
+                grid-column: -1/1;
+            }
+
+            .weapon h3 {
+                font-size: 14pt;
+                grid-column: -1/1;
+                line-height: 1;
+            }
+
+            .columns {
+                column-count: 2;
+                column-gap: .125in;
+            }
+
+            .columns section {
+                break-inside: avoid;
+            }
+
+            .columns h2,
+            .spanner {
+                column-span: all;
+                margin-bottom: 1rem;
+            }
+
+            .columns > p:nth-child(2) {
+                margin-top: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Olahu, Lashunta Cultist Mystic</h1>
+                <p><strong>Alignment:</strong> Chaotic Neutral</p>
+                <p><strong>Deity:</strong> Nyarlathotep</p>
+        </header>
+
+        <section class="scores">
+            <h2>Ability Scores</h2>
+            <table>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Modifier</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <th scope="row">Str</th>
+                    <td><input value="0"></td>
+                    <td><input value="10"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Dex</th>
+                    <td><input value="1"></td>
+                    <td><input value="12"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Con</th>
+                    <td><input value="0"></td>
+                    <td><input value="11"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Int</th>
+                    <td><input value="2"></td>
+                    <td><input value="14"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Wis</th>
+                    <td><input value="4"></td>
+                    <td><input value="18"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Cha</th>
+                    <td><input value="4"></td>
+                    <td><input value="18"></td>
+                </tr>
+            </table>
+        </section>
+        <section class="saving">
+            <h2>Saving Throws</h2>
+
+            <table>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Total</th>
+                    <th>Base</th>
+                    <th>Ability</th>
+                    <th>Misc</th>
+                </tr>
+                <tr>
+                    <th scope="row">Fort</th>
+                    <td><input value=""></td>
+                    <td><input value="0"></td>
+                    <td><input value="0"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Ref</th>
+                    <td><input value="1"></td>
+                    <td><input value="0"></td>
+                    <td><input value="1"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Will</th>
+                    <td><input value="6"></td>
+                    <td><input value="2"></td>
+                    <td><input value="4"></td>
+                    <td><input value=""></td>
+                </tr>
+            </table>
+        </section>
+        <section class="health">
+            <h2>Health</h2>
+            <p><label>Stamina <input value="17"></label></p>
+            <p><label>HP <input value="10"></label></p>
+            <p><label>Resolve <input value="5"></label></p>
+        </section>
+        <section class="attack">
+            <h2>Attack Bonuses</h2>
+            <table>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Total</th>
+                    <th>Base</th>
+                    <th>Ability</th>
+                    <th>Misc</th>
+                </tr>
+                <tr>
+                    <th scope="row">Melee</th>
+                    <td><input value=""></td>
+                    <td><input value="0"></td>
+                    <td><input value="0"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Ranged</th>
+                    <td><input value="1"></td>
+                    <td><input value="0"></td>
+                    <td><input value="1"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Thrown</th>
+                    <td><input value=""></td>
+                    <td><input value="0"></td>
+                    <td><input value="0"></td>
+                    <td><input value=""></td>
+                </tr>
+            </table>
+            <p><label>Initiative <input value=""></label></p>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <table>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Total</th>
+                    <th>Ranks</th>
+                    <th>Ability</th>
+                    <th>Misc</th>
+                </tr>
+                <tr>
+                    <th scope="row">Acrobatics* (Dex)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Athletics* (Str)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Bluff (Cha)</th>
+                    <td><input value="5"></td>
+                    <td><input value="1"></td>
+                    <td><input value="4"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Computers (Int)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Culture (Int)</th>
+                    <td><input value="3"></td>
+                    <td><input value=""></td>
+                    <td><input value="2"></td>
+                    <td><input value="1"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Diplomacy (Cha)</th>
+                    <td><input value="5"></td>
+                    <td><input value="1"></td>
+                    <td><input value="4"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Disguise (Cha)</th>
+                    <td><input value="6"></td>
+                    <td><input value="1"></td>
+                    <td><input value="4"></td>
+                    <td><input value="1"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Engineering (Int)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Intimidate (Cha)</th>
+                    <td><input value="7"></td>
+                    <td><input value="1"></td>
+                    <td><input value="4"></td>
+                    <td><input value="2"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Life Science (Int)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Medicine (Int)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Mysticism (Wis)</th>
+                    <td><input value="7"></td>
+                    <td><input value="1"></td>
+                    <td><input value="4"></td>
+                    <td><input value="2"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Perception (Wis)</th>
+                    <td><input value="5"></td>
+                    <td><input value="1"></td>
+                    <td><input value="4"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Physical Science (Int)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Piloting (Dex)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Profession (Various)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Profession (Various)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Sense Motive (Wis)</th>
+                    <td><input value="5"></td>
+                    <td><input value="1"></td>
+                    <td><input value="4"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Sleight Of Hand* (Dex)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Stealth* (Dex)</th>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="clskill">Survival (Wis)</th>
+                    <td><input value="5"></td>
+                    <td><input value="1"></td>
+                    <td><input value="4"></td>
+                    <td><input value=""></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="armor">
+            <h2>AC</h2>
+            <table>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Total</th>
+                    <th>Base</th>
+                    <th>Armor</th>
+                    <th>Dex</th>
+                    <th>Misc</th>
+                </tr>
+                <tr>
+                    <th scope="row">Energy</th>
+                    <td><input value="12"></td>
+                    <td><input value="10"></td>
+                    <td><input value="1"></td>
+                    <td><input value="1"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Kinetic</th>
+                    <td><input value="13"></td>
+                    <td><input value="10"></td>
+                    <td><input value="2"></td>
+                    <td><input value="1"></td>
+                    <td><input value=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">Maneuver</th>
+                    <td><input value="21"></td>
+                    <td><input value="8"></td>
+                    <td><input value="KAC"></td>
+                </tr>
+            </table>
+        </section>
+        <section class="weapons">
+            <h2>Weapons</h2>
+            <article class="weapon">
+                <h3>Survival Knife</h3>
+                <p class="weapon-level">Level 1</p>
+<!--                <p class="weapon-bonus">Atk </p>-->
+                <p class="weapon-dmg">1d4 S Dmg</p>
+<!--                <p class="weapon-crit">Crit </p>-->
+<!--                <p class="weapon-rng">Rng </p>-->
+<!--                <p class="weapon-ammo">Ammo </p>-->
+                <p class="weapon-special">Special: Analog, Operative </p>
+            </article>
+
+            <article class="weapon">
+                <h3>Pulse Caster Pistol</h3>
+                <p class="weapon-level">Level 1</p>
+<!--                <p class="weapon-bonus">Atk </p>-->
+                <p class="weapon-dmg">1d4 E Dmg</p>
+<!--                <p class="weapon-crit">Crit </p>-->
+                <p class="weapon-rng">30&prime; Rng</p>
+                <p class="weapon-ammo">20 Ammo</p>
+                <p class="weapon-special">Special: Nonlethal</p>
+            </article>
+<!--
+            <article class="weapon">
+                <h3>[Weapon Name]</h3>
+                <p class="weapon-level"><label>Level <input value=""></label></p>
+                <p class="weapon-bonus"><label>Atk Bonus <input value=""></label></p>
+                <p class="weapon-dmg"><label>Dmg <input value=""></label></p>
+                <p class="weapon-crit"><label>Crit <input value=""></label></p>
+                <p class="weapon-rng"><label>Rng <input value=""></label></p>
+                <p class="weapon-type"><label>Type <input value=""></label></p>
+                <p class="weapon-ammo"><label>Ammo <input value=""></label></p>
+                <p class="weapon-special"><label>Special <input value=""></label></p>
+            </article>
+            <article class="weapon">
+                <h3>[Weapon Name]</h3>
+                <p class="weapon-level"><label>Level <input value=""></label></p>
+                <p class="weapon-bonus"><label>Atk Bonus <input value=""></label></p>
+                <p class="weapon-dmg"><label>Dmg <input value=""></label></p>
+                <p class="weapon-crit"><label>Crit <input value=""></label></p>
+                <p class="weapon-rng"><label>Rng <input value=""></label></p>
+                <p class="weapon-type"><label>Type <input value=""></label></p>
+                <p class="weapon-ammo"><label>Ammo <input value=""></label></p>
+                <p class="weapon-special"><label>Special <input value=""></label></p>
+            </article>
+-->
+        </section>
+        <section class="abilities columns">
+            <h2>Abilities</h2>
+            <p>-5 DC on Knowledge: hidden cults</p>
+            <p>-5 DC on cult-related Diplomacy</p>
+            <p>+1 Disguise</p>
+            <p>+2 to Intimidate, Mysticism</p>
+            <p>Akashic Knowledge: Pick Profession on recovery to Channel</p>
+            <p>Channel Skill: +1 insight to Culture, Mysticism</p>
+            <p>Connection Spell: Identify</p>
+            <p>Detect Thoughts: 1/day</p>
+            <p>Daze: at will</p>
+            <p>Healing Touch: 10 min, 5 HP/level</p>
+            <p>Psychokinetic Hand: at will</p>
+            <p>Telepathy: 30&prime;</p>
+            <p>Veiled Threat</p>
+        </section>
+
+        <section class="spells columns">
+            <h2>Spells</h2>
+            <p class="spanner">DC: Spell Level + 14</p>
+            <section>
+            <h3>Level 0</h3>
+                <p>Detect Affliction</p>
+                <p>Detect Magic: 60&prime;</p>
+                <p>Telekinetic Projectile: 1d6 dmg</p>
+                <p>Token Spell: 1 hr</p>
+            </section>
+            <section>
+                <h3>Level 1 <small>3/day</small></h3>
+                <p>Fear: CR 4, 1d4 rounds</p>
+                <p>Mind Thrust: 2d10 dmg</p>
+            </section>
+        </section>
+    </body>
+</html>
