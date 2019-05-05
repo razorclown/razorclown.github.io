@@ -11,15 +11,16 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
-  background-color: #fdfdfd;
+  font: 400 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: black;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
-  font-kerning: normal; }
+  font-kerning: normal;
+  letter-spacing: .012em; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -44,7 +45,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 17.5px; }
 
 /**
  * Lists
@@ -60,18 +61,19 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /**
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #ba00ff;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #b100f2; }
   a:hover {
-    color: #111;
+    color: white;
     text-decoration: underline; }
 
 /**
@@ -112,16 +114,16 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
+  max-width: -webkit-calc(50em - (30px * 2));
+  max-width: calc(50em - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
+      max-width: -webkit-calc(50em - (30px));
+      max-width: calc(50em - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -159,9 +161,8 @@ pre {
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left; }
-  .site-title, .site-title:visited {
-    color: #424242; }
+  float: left;
+  color: #ba00ff; }
 
 .site-nav {
   float: right;
@@ -169,16 +170,16 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: white;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
     .site-nav {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #fdfdfd;
+      background-color: black;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: right; }
@@ -246,7 +247,7 @@ pre {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50em) {
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
@@ -255,7 +256,7 @@ pre {
   .footer-col-3 {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
@@ -263,11 +264,8 @@ pre {
 /**
  * Page content
  */
-.page-content {
-  background-color: #444; }
-  .page-content .wrapper {
-    padding: 30px;
-    background-color: white; }
+.page-content .wrapper {
+  padding: 30px; }
 
 .page-heading {
   font-size: 20px; }
@@ -279,7 +277,7 @@ pre {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 17.5px;
   color: #828282; }
 
 .post-link {
@@ -295,8 +293,9 @@ pre {
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
-  line-height: 1; }
-  @media screen and (max-width: 800px) {
+  line-height: 1;
+  color: #ba00ff; }
+  @media screen and (max-width: 50em) {
     .post-title {
       font-size: 36px; } }
 
@@ -304,17 +303,17 @@ pre {
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 50em) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 50em) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
     font-size: 20px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 50em) {
       .post-content h4 {
         font-size: 18px; } }
 
