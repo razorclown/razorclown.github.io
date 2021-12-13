@@ -1,590 +1,300 @@
-@font-face {
-  font-family: "Alegreya";
-  src: url("/fonts/Alegreya-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya";
-  src: url("/fonts/Alegreya-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya";
-  src: url("/fonts/Alegreya-Italic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya";
-  src: url("/fonts/Alegreya-BoldItalic.woff2") format("woff2");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya Sans";
-  src: url("/fonts/AlegreyaSans-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya Sans";
-  src: url("/fonts/AlegreyaSans-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya Sans";
-  src: url("/fonts/AlegreyaSans-Italic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya Sans";
-  src: url("/fonts/AlegreyaSans-BoldItalic.woff2") format("woff2");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya SC";
-  src: url("/fonts/AlegreyaSC-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya SC";
-  src: url("/fonts/AlegreyaSC-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya SC";
-  src: url("/fonts/AlegreyaSC-Italic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya SC";
-  src: url("/fonts/AlegreyaSC-BoldItalic.woff2") format("woff2");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya Sans SC";
-  src: url("/fonts/AlegreyaSansSC-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya Sans SC";
-  src: url("/fonts/AlegreyaSansSC-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya Sans SC";
-  src: url("/fonts/AlegreyaSansSC-Italic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap; }
-@font-face {
-  font-family: "Alegreya Sans SC";
-  src: url("/fonts/AlegreyaSansSC-BoldItalic.woff2") format("woff2");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap; }
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0; }
+@font-face { font-family: "Alegreya"; src: url("/fonts/Alegreya-Regular.woff2") format("woff2"); font-weight: normal; font-style: normal; font-display: swap; }
 
-/**
- * Basic styling
- */
-body {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.5;
-  font-family: "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  color: white;
-  background-color: black;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  letter-spacing: .012em; }
+@font-face { font-family: "Alegreya"; src: url("/fonts/Alegreya-Bold.woff2") format("woff2"); font-weight: bold; font-style: normal; font-display: swap; }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-.highlight {
-  margin-bottom: 15px; }
+@font-face { font-family: "Alegreya"; src: url("/fonts/Alegreya-Italic.woff2") format("woff2"); font-weight: normal; font-style: italic; font-display: swap; }
 
-/**
- * Images
- */
-img {
-  max-width: 100%;
-  vertical-align: middle; }
+@font-face { font-family: "Alegreya"; src: url("/fonts/Alegreya-BoldItalic.woff2") format("woff2"); font-weight: bold; font-style: italic; font-display: swap; }
 
-/**
- * Figures
- */
-figure > img {
-  display: block; }
+@font-face { font-family: "Alegreya Sans"; src: url("/fonts/AlegreyaSans-Regular.woff2") format("woff2"); font-weight: normal; font-style: normal; font-display: swap; }
 
-figcaption {
-  font-size: 19.25px; }
+@font-face { font-family: "Alegreya Sans"; src: url("/fonts/AlegreyaSans-Bold.woff2") format("woff2"); font-weight: bold; font-style: normal; font-display: swap; }
 
-/**
- * Lists
- */
-ul, ol {
-  margin-left: 30px; }
+@font-face { font-family: "Alegreya Sans"; src: url("/fonts/AlegreyaSans-Italic.woff2") format("woff2"); font-weight: normal; font-style: italic; font-display: swap; }
 
-li > ul,
-li > ol {
-  margin-bottom: 0; }
+@font-face { font-family: "Alegreya Sans"; src: url("/fonts/AlegreyaSans-BoldItalic.woff2") format("woff2"); font-weight: bold; font-style: italic; font-display: swap; }
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  font-family: "Alegreya SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+@font-face { font-family: "Alegreya SC"; src: url("/fonts/AlegreyaSC-Regular.woff2") format("woff2"); font-weight: normal; font-style: normal; font-display: swap; }
 
-/**
- * Links
- */
-a {
-  color: #ba00ff;
-  text-decoration: none; }
-  a:visited {
-    color: #b100f2; }
-  a:hover {
-    color: white;
-    text-decoration: underline; }
+@font-face { font-family: "Alegreya SC"; src: url("/fonts/AlegreyaSC-Bold.woff2") format("woff2"); font-weight: bold; font-style: normal; font-display: swap; }
 
-/**
- * Blockquotes
- */
-blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
-  font-size: 18px; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
+@font-face { font-family: "Alegreya SC"; src: url("/fonts/AlegreyaSC-Italic.woff2") format("woff2"); font-weight: normal; font-style: italic; font-display: swap; }
 
-/**
- * Code formatting
- */
-pre,
-code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef; }
+@font-face { font-family: "Alegreya SC"; src: url("/fonts/AlegreyaSC-BoldItalic.woff2") format("woff2"); font-weight: bold; font-style: italic; font-display: swap; }
 
-code {
-  padding: 1px 5px; }
+@font-face { font-family: "Alegreya Sans SC"; src: url("/fonts/AlegreyaSansSC-Regular.woff2") format("woff2"); font-weight: normal; font-style: normal; font-display: swap; }
 
-pre {
-  padding: 8px 12px;
-  overflow-x: auto; }
-  pre > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0; }
+@font-face { font-family: "Alegreya Sans SC"; src: url("/fonts/AlegreyaSansSC-Bold.woff2") format("woff2"); font-weight: bold; font-style: normal; font-display: swap; }
 
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(50em - (30px * 2));
-  max-width: calc(50em - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 50em) {
-    .wrapper {
-      max-width: -webkit-calc(50em - (30px));
-      max-width: calc(50em - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
+@font-face { font-family: "Alegreya Sans SC"; src: url("/fonts/AlegreyaSansSC-Italic.woff2") format("woff2"); font-weight: normal; font-style: italic; font-display: swap; }
 
-/**
- * Clearfix
- */
-.wrapper:after, .footer-col-wrapper:after {
-  content: "";
-  display: table;
-  clear: both; }
+@font-face { font-family: "Alegreya Sans SC"; src: url("/fonts/AlegreyaSansSC-BoldItalic.woff2") format("woff2"); font-weight: bold; font-style: italic; font-display: swap; }
 
-/**
- * Icons
- */
-.icon > svg {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle; }
-  .icon > svg path {
-    fill: #828282; }
+/** Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
-/**
- * Site header
- */
-.site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
-  position: relative; }
+/** Basic styling */
+body { font-weight: 400; font-size: 22px; line-height: 1.5; font-family: "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: white; background-color: black; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; letter-spacing: .012em; }
 
-.site-title {
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 56px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
-  color: #ba00ff; }
+/** Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
 
-.site-nav {
-  float: right;
-  line-height: 56px; }
-  .site-nav .menu-icon {
-    display: none; }
-  .site-nav .page-link {
-    color: white;
-    line-height: 1.5; }
-    .site-nav .page-link:not(:last-child) {
-      margin-right: 20px; }
-  @media screen and (max-width: 37.5em) {
-    .site-nav {
-      position: absolute;
-      top: 9px;
-      right: 15px;
-      background-color: black;
-      border: 1px solid #e8e8e8;
-      border-radius: 5px;
-      text-align: right; }
-      .site-nav .menu-icon {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 26px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center; }
-        .site-nav .menu-icon > svg {
-          width: 18px;
-          height: 15px; }
-          .site-nav .menu-icon > svg path {
-            fill: #424242; }
-      .site-nav .trigger {
-        clear: both;
-        display: none; }
-      .site-nav:hover .trigger {
-        display: block;
-        padding-bottom: 5px; }
-      .site-nav .page-link {
-        display: block;
-        padding: 5px 10px;
-        margin-left: 20px; }
-        .site-nav .page-link:not(:last-child) {
-          margin-right: 0; } }
+/** Images */
+img { max-width: 100%; vertical-align: middle; }
 
-/**
- * Site footer
- */
-.site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+/** Figures */
+figure > img { display: block; }
 
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: 15px; }
+figcaption { font-size: 19.25px; }
 
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0; }
+/** Lists */
+ul, ol { margin-left: 30px; }
 
-.footer-col-wrapper {
-  font-size: 15px;
-  color: #828282;
-  margin-left: -15px; }
+li > ul, li > ol { margin-bottom: 0; }
 
-.footer-col {
-  float: left;
-  margin-bottom: 15px;
-  padding-left: 15px; }
+/** Headings */
+h1, h2, h3, h4, h5, h6 { font-weight: 400; font-family: "Alegreya SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
 
-.footer-col-1 {
-  width: -webkit-calc(35% - (30px / 2));
-  width: calc(35% - (30px / 2)); }
+/** Links */
+a { color: #ba00ff; text-decoration: none; }
 
-.footer-col-2 {
-  width: -webkit-calc(20% - (30px / 2));
-  width: calc(20% - (30px / 2)); }
+a:visited { color: #b100f2; }
 
-.footer-col-3 {
-  width: -webkit-calc(45% - (30px / 2));
-  width: calc(45% - (30px / 2)); }
+a:hover { color: white; text-decoration: underline; }
 
-@media screen and (max-width: 50em) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (30px / 2));
-    width: calc(50% - (30px / 2)); }
+/** Blockquotes */
+blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; }
 
-  .footer-col-3 {
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 37.5em) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
-/**
- * Page content
- */
-.page-content .wrapper {
-  padding: 30px; }
+blockquote > :last-child { margin-bottom: 0; }
 
-.page-heading {
-  font-size: 20px; }
+/** Code formatting */
+pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
 
-.post-list {
-  margin-left: 0;
-  list-style: none; }
-  .post-list > li {
-    margin-bottom: 30px; }
+code { padding: 1px 5px; }
 
-.post-meta {
-  font-size: 19.25px;
-  color: #828282; }
+pre { padding: 8px 12px; overflow-x: auto; }
 
-.post-link {
-  display: block;
-  font-size: 24px; }
+pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: 30px; }
+/** Wrapper */
+.wrapper { max-width: -webkit-calc(50em - (30px * 2)); max-width: calc(50em - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
 
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1;
-  color: #ba00ff; }
-  @media screen and (max-width: 50em) {
-    .post-title {
-      font-size: 36px; } }
+@media screen and (max-width: 50em) { .wrapper { max-width: -webkit-calc(50em - (30px)); max-width: calc(50em - (30px)); padding-right: 15px; padding-left: 15px; } }
 
-.post-content {
-  margin-bottom: 30px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 50em) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 50em) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 50em) {
-      .post-content h4 {
-        font-size: 18px; } }
+/** Clearfix */
+.footer-col-wrapper:after, .wrapper:after { content: ""; display: table; clear: both; }
 
-/**
- * Syntax highlighting styles
- */
-.highlight {
-  background: #fff; }
-  .highlighter-rouge .highlight {
-    background: #eef; }
-  .highlight .c {
-    color: #998;
-    font-style: italic; }
-  .highlight .err {
-    color: #a61717;
-    background-color: #e3d2d2; }
-  .highlight .k {
-    font-weight: bold; }
-  .highlight .o {
-    font-weight: bold; }
-  .highlight .cm {
-    color: #998;
-    font-style: italic; }
-  .highlight .cp {
-    color: #999;
-    font-weight: bold; }
-  .highlight .c1 {
-    color: #998;
-    font-style: italic; }
-  .highlight .cs {
-    color: #999;
-    font-weight: bold;
-    font-style: italic; }
-  .highlight .gd {
-    color: #000;
-    background-color: #fdd; }
-  .highlight .gd .x {
-    color: #000;
-    background-color: #faa; }
-  .highlight .ge {
-    font-style: italic; }
-  .highlight .gr {
-    color: #a00; }
-  .highlight .gh {
-    color: #999; }
-  .highlight .gi {
-    color: #000;
-    background-color: #dfd; }
-  .highlight .gi .x {
-    color: #000;
-    background-color: #afa; }
-  .highlight .go {
-    color: #888; }
-  .highlight .gp {
-    color: #555; }
-  .highlight .gs {
-    font-weight: bold; }
-  .highlight .gu {
-    color: #aaa; }
-  .highlight .gt {
-    color: #a00; }
-  .highlight .kc {
-    font-weight: bold; }
-  .highlight .kd {
-    font-weight: bold; }
-  .highlight .kp {
-    font-weight: bold; }
-  .highlight .kr {
-    font-weight: bold; }
-  .highlight .kt {
-    color: #458;
-    font-weight: bold; }
-  .highlight .m {
-    color: #099; }
-  .highlight .s {
-    color: #d14; }
-  .highlight .na {
-    color: #008080; }
-  .highlight .nb {
-    color: #0086B3; }
-  .highlight .nc {
-    color: #458;
-    font-weight: bold; }
-  .highlight .no {
-    color: #008080; }
-  .highlight .ni {
-    color: #800080; }
-  .highlight .ne {
-    color: #900;
-    font-weight: bold; }
-  .highlight .nf {
-    color: #900;
-    font-weight: bold; }
-  .highlight .nn {
-    color: #555; }
-  .highlight .nt {
-    color: #000080; }
-  .highlight .nv {
-    color: #008080; }
-  .highlight .ow {
-    font-weight: bold; }
-  .highlight .w {
-    color: #bbb; }
-  .highlight .mf {
-    color: #099; }
-  .highlight .mh {
-    color: #099; }
-  .highlight .mi {
-    color: #099; }
-  .highlight .mo {
-    color: #099; }
-  .highlight .sb {
-    color: #d14; }
-  .highlight .sc {
-    color: #d14; }
-  .highlight .sd {
-    color: #d14; }
-  .highlight .s2 {
-    color: #d14; }
-  .highlight .se {
-    color: #d14; }
-  .highlight .sh {
-    color: #d14; }
-  .highlight .si {
-    color: #d14; }
-  .highlight .sx {
-    color: #d14; }
-  .highlight .sr {
-    color: #009926; }
-  .highlight .s1 {
-    color: #d14; }
-  .highlight .ss {
-    color: #990073; }
-  .highlight .bp {
-    color: #999; }
-  .highlight .vc {
-    color: #008080; }
-  .highlight .vg {
-    color: #008080; }
-  .highlight .vi {
-    color: #008080; }
-  .highlight .il {
-    color: #099; }
+/** Icons */
+.icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
 
-.callout {
-  font-size: 1.25em; }
+.icon > svg path { fill: #828282; }
 
-.post-tags {
-  font-size: 0.875em;
-  font-family: monospace; }
+/** Site header */
+.site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 56px; position: relative; }
 
-.post-summary + .post-summary {
-  margin-top: 30px; }
-  .post-summary + .post-summary:before {
-    content: "";
-    display: block;
-    width: 50%;
-    margin-left: 15%;
-    padding-top: 29px;
-    border-top: 1px solid #ececec; }
-.post-summary .post-tags {
-  font-size: 0.8125em; }
+.site-title { font-size: 26px; font-weight: 300; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; float: left; color: #ba00ff; }
 
-.post-content li + li {
-  margin-top: 7.5px; }
+.site-nav { float: right; line-height: 56px; }
+
+.site-nav .menu-icon { display: none; }
+
+.site-nav .page-link { color: white; line-height: 1.5; }
+
+.site-nav .page-link:not(:last-child) { margin-right: 20px; }
+
+@media screen and (max-width: 37.5em) { .site-nav { position: absolute; top: 9px; right: 15px; background-color: black; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; } .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; } .site-nav .menu-icon > svg { width: 18px; height: 15px; } .site-nav .menu-icon > svg path { fill: #424242; } .site-nav .trigger { clear: both; display: none; } .site-nav:hover .trigger { display: block; padding-bottom: 5px; } .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 20px; } .site-nav .page-link:not(:last-child) { margin-right: 0; } }
+
+/** Site footer */
+.site-footer { border-top: 1px solid #e8e8e8; padding: 30px 0; }
+
+.footer-heading { font-size: 18px; margin-bottom: 15px; }
+
+.contact-list, .social-media-list { list-style: none; margin-left: 0; }
+
+.footer-col-wrapper { font-size: 15px; color: #828282; margin-left: -15px; }
+
+.footer-col { float: left; margin-bottom: 15px; padding-left: 15px; }
+
+.footer-col-1 { width: -webkit-calc(35% - (30px / 2)); width: calc(35% - (30px / 2)); }
+
+.footer-col-2 { width: -webkit-calc(20% - (30px / 2)); width: calc(20% - (30px / 2)); }
+
+.footer-col-3 { width: -webkit-calc(45% - (30px / 2)); width: calc(45% - (30px / 2)); }
+
+@media screen and (max-width: 50em) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); } .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
+
+@media screen and (max-width: 37.5em) { .footer-col { float: none; width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
+
+/** Page content */
+.page-content .wrapper { padding: 30px; }
+
+.page-heading { font-size: 20px; }
+
+.post-list { margin-left: 0; list-style: none; }
+
+.post-list > li { margin-bottom: 30px; }
+
+.post-meta { font-size: 19.25px; color: #828282; }
+
+.post-link { display: block; font-size: 24px; }
+
+/** Posts */
+.post-header { margin-bottom: 30px; }
+
+.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; color: #ba00ff; }
+
+@media screen and (max-width: 50em) { .post-title { font-size: 36px; } }
+
+.post-content { margin-bottom: 30px; }
+
+.post-content h2 { font-size: 32px; }
+
+@media screen and (max-width: 50em) { .post-content h2 { font-size: 28px; } }
+
+.post-content h3 { font-size: 26px; }
+
+@media screen and (max-width: 50em) { .post-content h3 { font-size: 22px; } }
+
+.post-content h4 { font-size: 20px; }
+
+@media screen and (max-width: 50em) { .post-content h4 { font-size: 18px; } }
+
+/** Syntax highlighting styles */
+.highlight { background: #fff; }
+
+.highlighter-rouge .highlight { background: #eef; }
+
+.highlight .c { color: #998; font-style: italic; }
+
+.highlight .err { color: #a61717; background-color: #e3d2d2; }
+
+.highlight .k { font-weight: bold; }
+
+.highlight .o { font-weight: bold; }
+
+.highlight .cm { color: #998; font-style: italic; }
+
+.highlight .cp { color: #999; font-weight: bold; }
+
+.highlight .c1 { color: #998; font-style: italic; }
+
+.highlight .cs { color: #999; font-weight: bold; font-style: italic; }
+
+.highlight .gd { color: #000; background-color: #fdd; }
+
+.highlight .gd .x { color: #000; background-color: #faa; }
+
+.highlight .ge { font-style: italic; }
+
+.highlight .gr { color: #a00; }
+
+.highlight .gh { color: #999; }
+
+.highlight .gi { color: #000; background-color: #dfd; }
+
+.highlight .gi .x { color: #000; background-color: #afa; }
+
+.highlight .go { color: #888; }
+
+.highlight .gp { color: #555; }
+
+.highlight .gs { font-weight: bold; }
+
+.highlight .gu { color: #aaa; }
+
+.highlight .gt { color: #a00; }
+
+.highlight .kc { font-weight: bold; }
+
+.highlight .kd { font-weight: bold; }
+
+.highlight .kp { font-weight: bold; }
+
+.highlight .kr { font-weight: bold; }
+
+.highlight .kt { color: #458; font-weight: bold; }
+
+.highlight .m { color: #099; }
+
+.highlight .s { color: #d14; }
+
+.highlight .na { color: #008080; }
+
+.highlight .nb { color: #0086B3; }
+
+.highlight .nc { color: #458; font-weight: bold; }
+
+.highlight .no { color: #008080; }
+
+.highlight .ni { color: #800080; }
+
+.highlight .ne { color: #900; font-weight: bold; }
+
+.highlight .nf { color: #900; font-weight: bold; }
+
+.highlight .nn { color: #555; }
+
+.highlight .nt { color: #000080; }
+
+.highlight .nv { color: #008080; }
+
+.highlight .ow { font-weight: bold; }
+
+.highlight .w { color: #bbb; }
+
+.highlight .mf { color: #099; }
+
+.highlight .mh { color: #099; }
+
+.highlight .mi { color: #099; }
+
+.highlight .mo { color: #099; }
+
+.highlight .sb { color: #d14; }
+
+.highlight .sc { color: #d14; }
+
+.highlight .sd { color: #d14; }
+
+.highlight .s2 { color: #d14; }
+
+.highlight .se { color: #d14; }
+
+.highlight .sh { color: #d14; }
+
+.highlight .si { color: #d14; }
+
+.highlight .sx { color: #d14; }
+
+.highlight .sr { color: #009926; }
+
+.highlight .s1 { color: #d14; }
+
+.highlight .ss { color: #990073; }
+
+.highlight .bp { color: #999; }
+
+.highlight .vc { color: #008080; }
+
+.highlight .vg { color: #008080; }
+
+.highlight .vi { color: #008080; }
+
+.highlight .il { color: #099; }
+
+.callout { font-size: 1.25em; }
+
+.post-tags { font-size: 0.875em; font-family: monospace; }
+
+.post-summary + .post-summary { margin-top: 30px; }
+
+.post-summary + .post-summary:before { content: ""; display: block; width: 50%; margin-left: 15%; padding-top: 29px; border-top: 1px solid #ececec; }
+
+.post-summary .post-tags { font-size: 0.8125em; }
+
+.post-content li + li { margin-top: 7.5px; }
 
 /* Glyph, by Harry Roberts */
-hr {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
-  width: 75%; }
+hr { padding: 0; margin-left: auto; margin-right: auto; margin-bottom: 15px; border: none; border-top: medium double #333; color: #333; text-align: center; width: 75%; }
+
+/*# sourceMappingURL=main.css.map */

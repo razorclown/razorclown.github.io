@@ -1,148 +1,62 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box; }
+* { box-sizing: border-box; }
 
-*:after,
-*:before {
-  box-sizing: inherit; }
+*:after, *:before { box-sizing: inherit; }
 
-a {
-  color: white; }
+a { color: white; }
 
-a:visited {
-  color: #dfdfdf; }
+a:visited { color: #dfdfdf; }
 
-html {
-  font-size: 18px; }
-  @media (max-width: 32em) {
-    html {
-      font-size: 16px; } }
+html { font-size: 18px; }
 
-body {
-  font-family: sans-serif;
-  background-image: linear-gradient(to bottom, #8c9cc0, #eccdd3 17em, #f0edf2 44em);
-  background-color: #141516;
-  color: white;
-  line-height: 1.2;
-  margin: .5rem;
-  padding: 0;
-  min-height: calc(100vh - 1.5rem); }
+@media (max-width: 32em) { html { font-size: 16px; } }
 
-main {
-  display: block; }
+body { font-family: sans-serif; background-image: linear-gradient(to bottom, #8c9cc0, #eccdd3 17em, #f0edf2 44em); background-color: #141516; color: white; line-height: 1.2; margin: .5rem; padding: 0; min-height: calc(100vh - 1.5rem); }
 
-* + * {
-  margin-top: 1.2rem;
-  margin-bottom: 0; }
+main { display: block; }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: sans-serif;
-  font-stretch: condensed;
-  font-weight: normal;
-  font-style: italic;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin: 1.2rem 0;
-  line-height: 1; }
+* + * { margin-top: 1.2rem; margin-bottom: 0; }
 
-.wf-active h1,
-.wf-active h2,
-.wf-active h3,
-.wf-active h4 {
-  font-stretch: normal;
-  font-family: "Teko", sans-serif; }
+h1, h2, h3, h4 { font-family: sans-serif; font-stretch: condensed; font-weight: normal; font-style: italic; letter-spacing: 1px; text-transform: uppercase; margin: 1.2rem 0; line-height: 1; }
 
-h1 {
-  font-size: 5em; }
+.wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4 { font-stretch: normal; font-family: "Teko", sans-serif; }
 
-h2 {
-  font-size: 2.25em; }
+h1 { font-size: 5em; }
 
-h3 {
-  font-size: 1.75em; }
+h2 { font-size: 2.25em; }
 
-h4 {
-  font-size: 1.5em; }
+h3 { font-size: 1.75em; }
 
-header {
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
+h4 { font-size: 1.5em; }
 
-header,
-section,
-article {
-  padding: 1rem; }
+header { text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
 
-section {
-  max-width: 44em;
-  background-color: rgba(19, 42, 77, 0.6); }
+header, section, article { padding: 1rem; }
 
-article {
-  background-color: rgba(19, 42, 77, 0.2); }
+section { max-width: 44em; background-color: rgba(19, 42, 77, 0.6); }
 
-@media (min-width: 48em) {
-  header,
-  main,
-  footer {
-    margin-left: 4em; } }
-.char-desc,
-.char-qs {
-  background-color: rgba(19, 42, 77, 0.2); }
+article { background-color: rgba(19, 42, 77, 0.2); }
 
-@media (max-width: 32em) {
-  .char-desc,
-  .char-qs {
-    margin-left: -1rem;
-    margin-right: -1rem;
-    margin-bottom: -1rem; } }
-.char blockquote {
-  color: #00c3ff;
-  font-family: sans-serif;
-  font-stretch: condensed;
-  font-style: italic;
-  font-size: 1.75em;
-  text-transform: uppercase;
-  margin-left: 0;
-  margin-right: 0; }
+@media (min-width: 48em) { header, main, footer { margin-left: 4em; } }
 
-.wf-active .char blockquote {
-  font-stretch: normal;
-  font-family: "Teko", sans-serif; }
+.char-desc, .char-qs { background-color: rgba(19, 42, 77, 0.2); }
 
-[id="resources"] ul {
-  padding-left: 0;
-  column-width: 10.75em;
-  list-style: none; }
+@media (max-width: 32em) { .char-desc, .char-qs { margin-left: -1rem; margin-right: -1rem; margin-bottom: -1rem; } }
 
-[id="resources"] li {
-  position: relative;
-  margin-left: 1.25em; }
+.char blockquote { color: #00c3ff; font-family: sans-serif; font-stretch: condensed; font-style: italic; font-size: 1.75em; text-transform: uppercase; margin-left: 0; margin-right: 0; }
 
-[id="resources"] li:before {
-  content: "• ";
-  position: absolute;
-  left: -.75em; }
+.wf-active .char blockquote { font-stretch: normal; font-family: "Teko", sans-serif; }
 
-footer {
-  max-width: 44em; }
+[id="resources"] ul { padding-left: 0; column-width: 10.75em; list-style: none; }
 
-footer,
-footer a,
-footer a:visited {
-  color: #333; }
+[id="resources"] li { position: relative; margin-left: 1.25em; }
 
-@media (min-width: 36em) {
-  .rowmaker {
-    display: flex; }
+[id="resources"] li:before { content: "• "; position: absolute; left: -.75em; }
 
-  .rowmaker > * {
-    flex: 1 1 0px;
-    margin-top: 0; }
+footer { max-width: 44em; }
 
-  .rowmaker > *:not(:first-child) {
-    margin-left: .5rem; }
+footer, footer a, footer a:visited { color: #333; }
 
-  .rowmaker > *:not(:last-child) {
-    margin-right: .5rem; } }
+@media (min-width: 36em) { .rowmaker { display: flex; } .rowmaker > * { flex: 1 1 0px; margin-top: 0; } .rowmaker > *:not(:first-child) { margin-left: .5rem; } .rowmaker > *:not(:last-child) { margin-right: .5rem; } }
+
+/*# sourceMappingURL=overwatch.css.map */
