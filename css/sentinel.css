@@ -1,0 +1,19 @@
+@font-face { font-family: "Komika"; src: url("/fonts/KomikaTitle-webfont.woff") format("woff"); font-weight: bold; font-style: normal; font-display: swap; }
+
+:root { --pad: 1.5rem; --heading-pad: .5rem; --border-width: 3px; --shadow-width: 4px; }
+
+.page-content { background-color: white; color: black; }
+
+section { margin: var(--pad) 0; padding: 0 var(--pad); border: var(--border-width) solid black; box-shadow: var(--shadow-width) var(--shadow-width) 0px #ccc; }
+
+h1, h2, h3 { font-weight: normal; font-family: "Komika", serif; }
+
+h1, h2 { padding: var(--heading-pad); max-width: 26rem; box-shadow: var(--shadow-width) var(--shadow-width) 0px black; }
+
+h1 { font-size: 2em; background-color: lightblue; background-image: linear-gradient(to right, #71bad2 40%, #003f82); margin-left: calc(-1 * (var(--heading-pad))); }
+
+h2 { background-color: orange; background-image: linear-gradient(to bottom, #ff3000, #ffcb00); }
+
+section h2 { margin-left: calc(-1 * (var(--heading-pad) + var(--pad) + var(--border-width))); margin-top: calc(-1 * (var(--heading-pad) + var(--border-width))); }
+
+/*# sourceMappingURL=sentinel.css.map */
