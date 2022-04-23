@@ -4,6 +4,8 @@
 
 .page-content { background-color: white; color: black; }
 
+a:hover { color: black; }
+
 section { margin: var(--pad) 0; padding: 0 var(--pad); border: var(--border-width) solid black; box-shadow: var(--shadow-width) var(--shadow-width) 0px #ccc; }
 
 h1, h2, h3 { font-weight: normal; font-family: "Komika", serif; }
@@ -17,5 +19,7 @@ h2 { background-color: orange; background-image: linear-gradient(to bottom, #ff3
 section h2 { margin-left: calc(-1 * (var(--heading-pad) + var(--pad) + var(--border-width))); margin-top: calc(-1 * (var(--heading-pad) + var(--border-width))); }
 
 @media (min-width: 54em) { .sc-char-pic { float: right; margin-left: var(--pad); margin-bottom: var(--pad); max-width: 44%; } }
+
+.sc-char-pic figcaption { text-align: center; }
 
 /*# sourceMappingURL=sentinel.css.map */
