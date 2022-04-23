@@ -16,4 +16,6 @@ h2 { background-color: orange; background-image: linear-gradient(to bottom, #ff3
 
 section h2 { margin-left: calc(-1 * (var(--heading-pad) + var(--pad) + var(--border-width))); margin-top: calc(-1 * (var(--heading-pad) + var(--border-width))); }
 
+@media (min-width: 54em) { .sc-char-pic { float: right; margin-left: var(--pad); margin-bottom: var(--pad); max-width: 44%; } }
+
 /*# sourceMappingURL=sentinel.css.map */
