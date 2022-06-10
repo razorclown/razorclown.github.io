@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Win the Crowd Cheat Sheet</title>
+    <style>
+    :root {
+        --max-col: 32rem;
+        --min-col: 28rem;
+
+        --line: 1.5;
+        --gap: 1.5rem;
+        --double-gap: 3rem;
+        --half-gap: .75rem;
+        --quarter-gap: .375rem;
+    }
+
+    html {
+        line-height: var(--line);
+    }
+
+    @media (min-width: 42em) and (min-height: 36em) {
+        html {
+            font-size: 1.125em;
+        }
+    }
+
+    body {
+        /*display: flex;*/
+        margin: var(--half-gap);
+    }
+
+    div {
+        display: grid;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        grid-template-columns: repeat(auto-fit, minmax(var(--min-col), var(--max-col)));
+        grid-column-gap: var(--double-gap);
+        grid-row-gap: var(--gap);
+
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    div>h1,
+    div>h2 {
+        grid-column: -1/1;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    ul {
+        margin: 0;
+    }
+
+    *+p,
+    li {
+        margin-top: var(--quarter-gap);
+    }
+
+    *+ul {
+        margin-top: var(--half-gap);
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: var(--quarter-gap);
+    }
+
+    th,
+    td {
+        padding: var(--quarter-gap);
+    }
+
+    td {
+        border: 1px solid #888;
+    }
+
+    @media print {
+    	@page {
+    		size: letter landscape;
+    	}
+    	html {
+    		font-size: 12pt;
+    	}
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Win the Crowd Cheat Sheet</h1>
+        <section>
+            <h2>Promo Styles</h2>
+            <ul>
+                <li>Attitude: intimidation, sarcasm, snark</li>
+                <li>Comedy: fun, humor, goofiness</li>
+                <li>Heart: heroism, determination, white-meat babyfaceness</li>
+                <li>Presence: look, aura, badassitude</li>
+                <li>Weird: supernatural, otherworldly, uncanniness</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Fighting Styles</h2>
+            <ul>
+                <li>Acrobatic: leaping or flying attacks</li>
+                <li>Grappling: grabbing and moving your opponent</li>
+                <li>Power: raw strength over technique</li>
+                <li>Striking: punches, kicks, headbutts, etc.</li>
+                <li>Submission: inflicting pain to force your opponent to give up</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Momentum</h2>
+            <ul>
+                <li>Spend before roll</li>
+                <li>Your roll: +1 for each</li>
+                <li>Opponent's roll against you: -1 for 2</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Dice Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12 or higher</td>
+                        <td><strong>Critical</strong>: Succeed and give your target a twist, or succeed twice</td>
+                    </tr>
+                    <tr>
+                        <td>10–11</td>
+                        <td><strong>Success</strong></td>
+                    </tr>
+                    <tr>
+                        <td>7–9</td>
+                        <td><strong>Partial Success</strong>: Succeed and take a twist</td>
+                    </tr>
+                    <tr>
+                        <td>6 or lower</td>
+                        <td><strong>Failure</strong>: Take a twist</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <h2>Moves</h2>
+        <section>
+            <h3>Move the Audience</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Result</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Success</td>
+                        <td>Gain one Connection</td>
+                    </tr>
+                    <tr>
+                        <td>Twist</td>
+                        <td>Lose one Momentum</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>Twice per session: once during battle scene, once during talking scene</li>
+                <li>Can't spend Momentum</li>
+                <li>Use bonus from previous roll</li>
+                <li>Record how you gained Connection</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Cut a Promo</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Result</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Success</td>
+                        <td>Gain two Momentum</td>
+                    </tr>
+                    <tr>
+                        <td>Get what you ask for</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Twist</td>
+                        <td>Lose two Momentum</td>
+                    </tr>
+                    <tr>
+                        <td>Get the opposite of what you ask for</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Fighting Move</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Result</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Success</td>
+                        <td>Add one tick to a Finish clock</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Twist</td>
+                        <td>Gain disadvantage against a fighting style until the end of the battle</td>
+                    </tr>
+                    <tr>
+                        <td>Lose two Momentum</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Set Up Move</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Result</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Success</td>
+                        <td>Gain +2 on your next Fighting Move</td>
+                    </tr>
+                    <tr>
+                        <td>Gain one Momentum</td>
+                    </tr>
+                    <tr>
+                        <td>Twist</td>
+                        <td>The next Fighting Move made against you gains +2</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>May use Fighting Style or Promo Style</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Special Moves</h3>
+            <ul>
+                <li>Signature: Gain 2 Momentum on first time you inflict damage</li>
+                <li>Finisher: Do 1 extra damage for each success; if you don't end the match, target gains 2 Momentum</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
