@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Win the Crowd Character Sheet</title>
+</head>
+
+<body>
+
+    <script>
+    const fightingModes = [
+        'attack',
+        'defense'
+    ];
+
+    const fightingStyles = [
+        'acrobatic',
+        'grappling',
+        'power',
+        'striking',
+        'submission'
+    ];
+
+    const checkBoxBonusTypes = [
+        'plus',
+        'minus',
+        'tempPlus',
+        'tempMinus'
+    ];
+
+    for (let mode of fightingModes) {
+        let table = document.createElement('table');
+        table.innerHTML = `<caption>${mode}</caption><tr><th>Style</th><th>+</th><th>-</th><th>Temp +</th><th>Temp -</th></tr>`;
+
+        for (let style of fightingStyles) {
+            let row = document.createElement('tr');
+            let rowHead = document.createElement('th');
+
+            rowHead.setAttribute('scope', 'row');
+            rowHead.innerHTML = style;
+            row.appendChild(rowHead);
+
+            for (let bonusType of checkBoxBonusTypes) {
+                let box = makeCheckBox(mode, style, bonusType);
+                let cell = document.createElement('td');
+                cell.appendChild(box);
+                row.appendChild(cell);
+            }
+
+            table.appendChild(row);
+        }
+        document.body.appendChild(table);
+    }
+
+    function makeCheckBox(mode, style, bonusType) {
+        let box = document.createElement('input');
+        box.type = 'checkbox';
+
+        box.dataset.mode = mode;
+        box.dataset.style = style;
+        box.dataset.bonusType = bonusType;
+
+        return box;
+    }
+
+    function getCheckBox(mode, style, bonusType) {
+        return document.querySelector(`[data-mode="${mode}"][data-style="${style}"][data-bonus-type="${bonusType}"]`);
+    }
+    </script>
+</body>
+
+</html>
