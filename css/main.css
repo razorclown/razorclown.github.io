@@ -286,6 +286,8 @@ body.light-mode { color: black; background-color: white; }
 
 .light-mode a:hover { color: black; }
 
+.light-mode .site-nav { background-color: white; }
+
 .light-mode .site-nav .page-link { color: black; }
 
 .callout { font-size: 1.25em; }
