@@ -282,6 +282,12 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .highlight .il { color: #099; }
 
+body.light-mode { color: black; background-color: white; }
+
+.light-mode a:hover { color: black; }
+
+.light-mode .site-nav .page-link { color: black; }
+
 .callout { font-size: 1.25em; }
 
 .post-tags { font-size: 0.875em; font-family: monospace; }

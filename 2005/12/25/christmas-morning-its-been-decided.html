@@ -119,6 +119,75 @@ on God.</p>
       ga('send', 'pageview');
 </script>
     
+    <script>
+        function setColorCookie() {
+    const toggle    = document.getElementById('toggleBox');
+    const lightMode = toggle.checked;
+
+    if (lightMode) {
+        document.cookie = 'lightMode=true; path=/';
+    } else {
+        document.cookie = 'lightMode=; path=/';
+    }
+}
+
+function lightModeIsOn() {
+    if (document.cookie.split(';').some((item) => item.includes('lightMode=true'))) {
+        console.log('Light mode on.');
+        return true;
+    } else {
+        console.log('Light mode off.');
+        return false;
+    }
+}
+
+function setColorScheme() {
+    const toggle    = document.getElementById('toggleBox');
+    const lightMode = toggle.checked;
+
+    if (lightMode) {
+        document.body.classList.add('light-mode');
+    } else {
+        document.body.classList.remove('light-mode');
+    }
+}
+
+function createColorToggle() {
+    const menu   = document.querySelector('.trigger');
+    const toggle = document.createElement('input');
+    const label  = document.createElement('label');
+
+    toggle.id   = 'toggleBox';
+    toggle.type = 'checkbox';
+    toggle.name = 'lightMode';
+
+    label.innerHTML = 'Light Mode';
+
+    toggle.addEventListener('change', (event) => {
+        setColorScheme();
+        setColorCookie();
+    })
+
+    label.appendChild(toggle);
+    menu.appendChild(label);
+}
+
+function setColorToggle() {
+    const toggle    = document.getElementById('toggleBox');
+    const lightMode = lightModeIsOn();
+
+    if (lightMode) {
+        toggle.checked = true;
+    } else {
+        toggle.checked = false;
+    }
+
+    setColorScheme();
+}
+
+createColorToggle();
+setColorToggle();
+    </script>
   </body>
 
 </html>
