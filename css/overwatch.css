@@ -7,7 +7,9 @@ a { color: white; }
 
 a:visited { color: #dfdfdf; }
 
-html { font-size: 18px; }
+header a:visited { color: white; }
+
+html { font-size: 18px; scroll-behavior: smooth; }
 
 @media (max-width: 32em) { html { font-size: 16px; } }
 
