@@ -10,7 +10,7 @@
   <title>Taking Correction</title>
   <meta name="description" content="I got the chance to preach at Crossroads this morning! I ended up talking about how hard it is for me to take correction, even from God. Maybe you can sympat...">
 
-  <link rel="stylesheet" href="/css/main.css?2024-01-11-2236">
+  <link rel="stylesheet" href="/css/main.css?2024-01-18-1015">
   <link rel="canonical" href="https://razorclown.github.io/2012/07/15/taking-correction.html">
   <link rel="alternate" type="application/rss+xml" title="…delirium Mk. III" href="https://razorclown.github.io/feed.xml">
   
@@ -35,7 +35,7 @@
         </svg>
       </a>
 
-      <div class="trigger">
+      <div id="mainmenu" class="trigger">
         <a class="page-link" href="/blog/">Blog</a>
         <a class="page-link" href="/tag/">Tags</a>
         <a class="page-link" href="/about/">About</a>
@@ -268,8 +268,8 @@ as a father the son he delights in.
     
     <script>
         function setColorCookie() {
-    const toggle    = document.getElementById('toggleBox');
-    const lightMode = toggle.checked;
+    var toggle    = document.getElementById('toggleBox');
+    var lightMode = toggle.checked;
 
     if (lightMode) {
         document.cookie = 'lightMode=true; path=/';
@@ -279,7 +279,7 @@ as a father the son he delights in.
 }
 
 function lightModeIsOn() {
-    if (document.cookie.split(';').some((item) => item.includes('lightMode=true'))) {
+    if (document.cookie.split(';').some(function(item) {return item.includes('lightMode=true')})) {
         console.log('Light mode on.');
         return true;
     } else {
@@ -289,8 +289,8 @@ function lightModeIsOn() {
 }
 
 function setColorScheme() {
-    const toggle    = document.getElementById('toggleBox');
-    const lightMode = toggle.checked;
+    var toggle    = document.getElementById('toggleBox');
+    var lightMode = toggle.checked;
 
     if (lightMode) {
         document.body.classList.add('light-mode');
@@ -300,9 +300,9 @@ function setColorScheme() {
 }
 
 function createColorToggle() {
-    const menu   = document.querySelector('.trigger');
-    const toggle = document.createElement('input');
-    const label  = document.createElement('label');
+    var menu   = document.getElementById('mainmenu');
+    var toggle = document.createElement('input');
+    var label  = document.createElement('label');
 
     toggle.id   = 'toggleBox';
     toggle.type = 'checkbox';
@@ -310,18 +310,18 @@ function createColorToggle() {
 
     label.innerHTML = 'Light Mode';
 
-    toggle.addEventListener('change', (event) => {
+    toggle.addEventListener('change', function(event){
         setColorScheme();
         setColorCookie();
-    })
+    });
 
     label.appendChild(toggle);
     menu.appendChild(label);
 }
 
 function setColorToggle() {
-    const toggle    = document.getElementById('toggleBox');
-    const lightMode = lightModeIsOn();
+    var toggle    = document.getElementById('toggleBox');
+    var lightMode = lightModeIsOn();
 
     if (lightMode) {
         toggle.checked = true;
